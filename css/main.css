@@ -1,0 +1,74 @@
+body {
+  background: #50514F;
+  font-family: constantia;
+  color: #F7F2F2;
+}
+
+body .carousel {
+  margin-top: 72px;
+}
+
+body #logo {
+  padding: 0;
+  margin: 0;
+  width: 200px;
+}
+
+body .dropdown-menu {
+  background-color: #343a40;
+}
+
+body .dropdown-menu a {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.changeSlip {
+  content: url(/img/home_slip_mobile.jpg);
+}
+
+.changePillow {
+  content: url(/img/home_pillow_mobile.jpg);
+}
+
+.changeEmbroidery {
+  content: url(/img/home_embroidery_mobile.jpg);
+}
+
+.changeProject {
+  content: url(/img/home_project_mobile.jpg);
+}
+
+.changeFabric {
+  content: url(/img/home_fabric_mobile.jpg);
+}
+
+@media (min-width: 992px) {
+  .changeSlip {
+    content: url(/img/home_slip.jpg);
+  }
+  .changePillow {
+    content: url(/img/home_pillow.jpg);
+  }
+  .changeEmbroidery {
+    content: url(/img/home_embroidery.jpg);
+  }
+  .changeProject {
+    content: url(/img/home_project.jpg);
+  }
+  .changeFabric {
+    content: url(/img/home_fabric.jpg);
+  }
+}
+
+@media (min-width: 992px) {
+  .navbar .navbar-item .dropdown-menu {
+    display: none;
+  }
+  .navbar .navbar-item:hover .dropdown-menu {
+    display: block;
+  }
+  .navbar .navbar-item .dropdown-menu {
+    margin-top: 0;
+  }
+}
+/*# sourceMappingURL=main.css.map */
