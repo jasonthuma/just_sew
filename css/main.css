@@ -1,11 +1,7 @@
 body {
-  background: #343a40;
+  background: #F7F2F2;
   font-family: constantia;
-  color: #F7F2F2;
-}
-
-body .carousel {
-  margin-top: 72px;
+  color: #343a40;
 }
 
 body #logo {
@@ -20,6 +16,16 @@ body .dropdown-menu {
 
 body .dropdown-menu a {
   color: rgba(255, 255, 255, 0.5);
+}
+
+body .underNav {
+  margin-top: 72px;
+}
+
+body .page-footer {
+  background-color: #343a40;
+  color: #F7F2F2;
+  font-size: .75rem;
 }
 
 .companyName {
@@ -41,7 +47,7 @@ body .dropdown-menu a {
 }
 
 .contact .contactInfo {
-  margin-top: 0;
+  margin: 0;
   padding-left: 20px;
 }
 
@@ -89,6 +95,16 @@ body .dropdown-menu a {
   .changeFabric {
     content: url(/img/home_fabric.jpg);
   }
+}
+
+#aboutPortrait {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 50%;
+}
+
+.aboutHeader {
+  margin-top: 20px;
 }
 
 @media (min-width: 768px) {

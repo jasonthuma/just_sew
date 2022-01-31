@@ -18,30 +18,31 @@
         @warn 'Invalid breakpoint: #{$breakpoint}.';
     }
 }
-
+//applies to all pages:
 body {
     background: $primary-color;
     font-family: $primary-font;
-    color: $text-color;
-
-    .carousel {
-        margin-top: 72px;
-    }
-
+    color: $dark-text-color;
     #logo {
         padding: 0;
         margin: 0;
         width: 190px;
     }
-
     .dropdown-menu {
-        background-color: $primary-color;
+        background-color: $dark-color;
         a {
             color: rgba(255, 255, 255, .5);
         }
     }
+    .underNav {
+        margin-top: 72px;
+    }
+    .page-footer {
+        background-color: $dark-color;
+        color: $light-text-color;
+        font-size: .75rem;
+    }
 }
-
 .companyName {
     margin-bottom: 5px;
 }
@@ -56,7 +57,7 @@ body {
         margin-bottom: 5px;
     }
     .contactInfo {
-        margin-top: 0;
+        margin: 0;
         padding-left: 20px;
         
         #cell {
@@ -68,6 +69,7 @@ body {
     }
 }
 
+//index.html
 .changeSlip {
     content: url(/img/home_slip_mobile.jpg);
 }
@@ -101,6 +103,16 @@ body {
     .changeFabric {
         content: url(/img/home_fabric.jpg);
     }
+}
+
+//about.html
+#aboutPortrait {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 50%;
+}
+.aboutHeader {
+    margin-top: 20px;
 }
 
 @include respond-above(sm) {
