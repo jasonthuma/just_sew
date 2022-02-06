@@ -1,9 +1,5 @@
 @import './config';
 
-@function weight($weight-name) {
-    @return map-get($font-weights, $weight-name);
-}
-
 @function breakPoint($breakpoint) {
     @return map-get($breakpoints, $breakpoint);
 }
@@ -115,12 +111,121 @@ body {
     margin-top: 20px;
 }
 
+//reviews.html
+.banner {
+    position: relative;
+    height: 200px;
+    
+    .bannerHeader {
+        height: 200px;
+    }
+}
+.banner::before {
+    content: "";
+    background-image: url(/img/reviews_banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.7;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+}
+.reviewsHeader {
+    position: relative;
+    font-size: 3rem;
+    font-weight: bold;
+    
+}
+.review-grid {
+    display: grid;
+    gap: 1.5rem;
+    padding: 20px;
+    grid-auto-columns: 1fr;
+    
+    grid-template-areas: 
+        'beth'
+        'marianne'
+        'marcy'
+        'elizabeth'
+        'heidi'
+        'kate'
+        'cindy'
+        'sandra'
+        'nancy'
+    ;
+}
+.review {
+    border: 2px solid $dark-text-color;
+    background-color: $medium-background;
+    padding: 20px;
+    //align-self: center;
+}
+.beth {
+    grid-area: beth;
+}
+.marianne {
+    grid-area: marianne;
+}
+.marcy {
+    grid-area: marcy;
+}
+.elizabeth {
+    grid-area: elizabeth;
+}
+.heidi {
+    grid-area: heidi;
+}
+.kate {
+    grid-area: kate;
+}
+.cindy {
+    grid-area: cindy;
+}
+.sandra {
+    grid-area: sandra;
+}
+.nancy {
+    grid-area: nancy;
+}
+
+@include respond-above(sm) {
+    .review-grid {
+        grid-template-areas: 
+            'heidi marianne'
+            'nancy marianne'
+            'elizabeth beth'
+            'cindy cindy'
+            'kate sandra'
+            'kate marcy'
+        ;
+    }
+}
+
+@include respond-above(lg) {
+    .review-grid {
+        grid-template-areas: 
+            'beth marianne marianne'
+            'marcy kate elizabeth'
+            'heidi kate sandra'
+            'cindy cindy nancy'
+        ;
+    }
+}
+
 @include respond-above(sm) {
     .address {
         text-align: left;
     }
     .contact {
         text-align: right;
+    }
+    .banner {
+        height: 300px;
+        .bannerHeader {
+            height: 300px;
+        }
     }
 }
 

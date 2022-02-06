@@ -107,12 +107,127 @@ body .page-footer {
   margin-top: 20px;
 }
 
+.banner {
+  position: relative;
+  height: 200px;
+}
+
+.banner .bannerHeader {
+  height: 200px;
+}
+
+.banner::before {
+  content: "";
+  background-image: url(/img/reviews_banner.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.7;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+}
+
+.reviewsHeader {
+  position: relative;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.review-grid {
+  display: -ms-grid;
+  display: grid;
+  gap: 1.5rem;
+  padding: 20px;
+  grid-auto-columns: 1fr;
+      grid-template-areas: 'beth' 'marianne' 'marcy' 'elizabeth' 'heidi' 'kate' 'cindy' 'sandra' 'nancy';
+}
+
+.review {
+  border: 2px solid #343a40;
+  background-color: #eeeaea;
+  padding: 20px;
+}
+
+.beth {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: beth;
+}
+
+.marianne {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: marianne;
+}
+
+.marcy {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: marcy;
+}
+
+.elizabeth {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: elizabeth;
+}
+
+.heidi {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  grid-area: heidi;
+}
+
+.kate {
+  -ms-grid-row: 6;
+  -ms-grid-column: 1;
+  grid-area: kate;
+}
+
+.cindy {
+  -ms-grid-row: 7;
+  -ms-grid-column: 1;
+  grid-area: cindy;
+}
+
+.sandra {
+  -ms-grid-row: 8;
+  -ms-grid-column: 1;
+  grid-area: sandra;
+}
+
+.nancy {
+  -ms-grid-row: 9;
+  -ms-grid-column: 1;
+  grid-area: nancy;
+}
+
+@media (min-width: 768px) {
+  .review-grid {
+        grid-template-areas: 'heidi marianne' 'nancy marianne' 'elizabeth beth' 'cindy cindy' 'kate sandra' 'kate marcy';
+  }
+}
+
+@media (min-width: 1200px) {
+  .review-grid {
+        grid-template-areas: 'beth marianne marianne' 'marcy kate elizabeth' 'heidi kate sandra' 'cindy cindy nancy';
+  }
+}
+
 @media (min-width: 768px) {
   .address {
     text-align: left;
   }
   .contact {
     text-align: right;
+  }
+  .banner {
+    height: 300px;
+  }
+  .banner .bannerHeader {
+    height: 300px;
   }
 }
 
