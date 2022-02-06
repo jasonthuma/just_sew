@@ -57,47 +57,47 @@ body {
         padding-left: 20px;
         
         #cell {
-            list-style-image: url("/img/phoneSmall.png");
+            list-style-image: url("just_sew/img/phoneSmall.png");
         }
         #mail {
-            list-style-image: url("/img/mailSmall.png");
+            list-style-image: url("just_sew/img/mailSmall.png");
         }
     }
 }
 
 //index.html
 .changeSlip {
-    content: url(/img/home_slip_mobile.jpg);
+    content: url(just_sew/img/home_slip_mobile.jpg);
 }
 .changePillow {
-    content: url(/img/home_pillow_mobile.jpg);
+    content: url(just_sew/img/home_pillow_mobile.jpg);
 }
 .changeEmbroidery {
-    content: url(/img/home_embroidery_mobile.jpg);
+    content: url(just_sew/img/home_embroidery_mobile.jpg);
 }
 .changeProject {
-    content: url(/img/home_project_mobile.jpg);
+    content: url(just_sew/img/home_project_mobile.jpg);
 }
 .changeFabric {
-    content: url(/img/home_fabric_mobile.jpg);
+    content: url(just_sew/img/home_fabric_mobile.jpg);
 }
   
 
 @include respond-above(md) {
     .changeSlip {
-        content: url(/img/home_slip.jpg);
+        content: url(just_sew/img/home_slip.jpg);
     }
     .changePillow {
-        content: url(/img/home_pillow.jpg);
+        content: url(just_sew/img/home_pillow.jpg);
     }
     .changeEmbroidery {
-        content: url(/img/home_embroidery.jpg);
+        content: url(just_sew/img/home_embroidery.jpg);
     }
     .changeProject {
-        content: url(/img/home_project.jpg);
+        content: url(just_sew/img/home_project.jpg);
     }
     .changeFabric {
-        content: url(/img/home_fabric.jpg);
+        content: url(just_sew/img/home_fabric.jpg);
     }
 }
 
@@ -122,7 +122,7 @@ body {
 }
 .banner::before {
     content: "";
-    background-image: url(/img/reviews_banner.jpg);
+    background-image: url(just_sew/img/reviews_banner.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     opacity: 0.7;
