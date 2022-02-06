@@ -64,7 +64,7 @@ body .page-footer {
 }
 
 .changePillow {
-  content: url(/just_sew/img/home_pillow_mobile.jpg);
+  content: url(/just_sew/img/home_pillow_mobile.JPG);
 }
 
 .changeEmbroidery {
@@ -84,7 +84,7 @@ body .page-footer {
     content: url(/just_sew/img/home_slip.jpg);
   }
   .changePillow {
-    content: url(/just_sew/img/home_pillow.jpg);
+    content: url(/just_sew/img/home_pillow.JPG);
   }
   .changeEmbroidery {
     content: url(/just_sew/img/home_embroidery.jpg);
