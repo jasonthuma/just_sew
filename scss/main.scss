@@ -64,6 +64,9 @@ body {
         }
     }
 }
+.bannerHeader {
+    height: 200px;
+}
 
 //index.html
 .changeSlip {
@@ -104,10 +107,6 @@ body {
 .slipBanner {
     position: relative;
     height: 200px;
-    
-    .bannerHeader {
-        height: 200px;
-    }
 }
 .slipBanner::before {
     content: "";
@@ -140,10 +139,6 @@ body {
 .reviewBanner {
     position: relative;
     height: 200px;
-    
-    .bannerHeader {
-        height: 200px;
-    }
 }
 .reviewBanner::before {
     content: "";
@@ -244,11 +239,12 @@ body {
     .contact {
         text-align: right;
     }
-    .banner {
+    .reviewBanner .slipBanner {
         height: 300px;
-        .bannerHeader {
-            height: 300px;
-        }
+    }
+    
+    .bannerHeader {
+        height: 300px;
     }
 }
 
