@@ -248,7 +248,7 @@ body .page-footer {
   .reviewBanner .slipBanner {
     height: 300px;
   }
-  .bannerHeader {
+  .reviewBanner .slipBanner .bannerHeader {
     height: 300px;
   }
 }
