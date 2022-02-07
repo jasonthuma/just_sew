@@ -97,6 +97,33 @@ body .page-footer {
   }
 }
 
+.slipBanner {
+  position: relative;
+  height: 200px;
+}
+
+.slipBanner .bannerHeader {
+  height: 200px;
+}
+
+.slipBanner::before {
+  content: "";
+  background-image: url(/just_sew/img/slip_banner.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.7;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+}
+
+.slipHeader {
+  position: relative;
+  font-size: 3rem;
+}
+
 #aboutPortrait {
   width: 100%;
   max-width: 400px;
@@ -107,16 +134,16 @@ body .page-footer {
   margin-top: 20px;
 }
 
-.banner {
+.reviewBanner {
   position: relative;
   height: 200px;
 }
 
-.banner .bannerHeader {
+.reviewBanner .bannerHeader {
   height: 200px;
 }
 
-.banner::before {
+.reviewBanner::before {
   content: "";
   background-image: url(/just_sew/img/reviews_banner.jpg);
   background-repeat: no-repeat;
@@ -132,7 +159,6 @@ body .page-footer {
 .reviewsHeader {
   position: relative;
   font-size: 3rem;
-  font-weight: bold;
 }
 
 .review-grid {
