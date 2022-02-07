@@ -100,6 +100,33 @@ body {
         content: url(/just_sew/img/home_fabric.jpg);
     }
 }
+//services:slipcovers
+.slipBanner {
+    position: relative;
+    height: 200px;
+    
+    .bannerHeader {
+        height: 200px;
+    }
+}
+.slipBanner::before {
+    content: "";
+    background-image: url(/just_sew/img/slip_banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.7;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+}
+.slipHeader {
+    position: relative;
+    font-size: 3rem;
+    font-weight: bold;
+    
+}
 
 //about.html
 #aboutPortrait {
@@ -112,7 +139,7 @@ body {
 }
 
 //reviews.html
-.banner {
+.reviewBanner {
     position: relative;
     height: 200px;
     
@@ -120,7 +147,7 @@ body {
         height: 200px;
     }
 }
-.banner::before {
+.reviewBanner::before {
     content: "";
     background-image: url(/just_sew/img/reviews_banner.jpg);
     background-repeat: no-repeat;
