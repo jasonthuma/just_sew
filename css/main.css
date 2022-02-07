@@ -59,7 +59,7 @@ body .page-footer {
   list-style-image: url("/just_sew/img/mailSmall.png");
 }
 
-.bannerHeader {
+.bannerHeader, .slipBannerHeader {
   height: 200px;
 }
 
@@ -245,8 +245,11 @@ body .page-footer {
   .contact {
     text-align: right;
   }
-  .reviewBanner, .slipBanner, .bannerHeader {
+  .reviewBanner, .bannerHeader {
     height: 300px;
+  }
+  .slipBanner, .slipBannerHeader {
+    height: 400px;
   }
 }
 
