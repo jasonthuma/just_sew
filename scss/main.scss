@@ -112,14 +112,11 @@ body {
 }
 
 //reviews.html
-.banner {
+.banner, .bannerHeader {
     position: relative;
     height: 200px;
-    
-    .bannerHeader {
-        height: 200px;
-    }
 }
+
 .banner::before {
     content: "";
     background-image: url(/img/reviews_banner.jpg);
@@ -221,11 +218,8 @@ body {
     .contact {
         text-align: right;
     }
-    .banner {
+    .banner, .bannerHeader {
         height: 300px;
-        .bannerHeader {
-            height: 300px;
-        }
     }
 }
 
