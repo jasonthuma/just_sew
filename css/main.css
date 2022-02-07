@@ -59,10 +59,6 @@ body .page-footer {
   list-style-image: url("/just_sew/img/mailSmall.png");
 }
 
-.bannerHeader {
-  height: 200px;
-}
-
 .changeSlip {
   content: url(/just_sew/img/home_slip_mobile.jpg);
 }
@@ -106,6 +102,10 @@ body .page-footer {
   height: 200px;
 }
 
+.slipBanner .bannerHeader {
+  height: 200px;
+}
+
 .slipBanner::before {
   content: "";
   background-image: url(/just_sew/img/slip_banner.jpg);
@@ -136,6 +136,10 @@ body .page-footer {
 
 .reviewBanner {
   position: relative;
+  height: 200px;
+}
+
+.reviewBanner .bannerHeader {
   height: 200px;
 }
 

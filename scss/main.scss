@@ -64,9 +64,7 @@ body {
         }
     }
 }
-.bannerHeader {
-    height: 200px;
-}
+
 
 //index.html
 .changeSlip {
@@ -107,6 +105,9 @@ body {
 .slipBanner {
     position: relative;
     height: 200px;
+    .bannerHeader {
+        height: 200px;
+    }
 }
 .slipBanner::before {
     content: "";
@@ -139,6 +140,9 @@ body {
 .reviewBanner {
     position: relative;
     height: 200px;
+    .bannerHeader {
+        height: 200px;
+    }
 }
 .reviewBanner::before {
     content: "";
