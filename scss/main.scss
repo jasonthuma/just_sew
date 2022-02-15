@@ -99,6 +99,15 @@ body {
     .changeFabric {
         content: url(/img/home_fabric.jpg);
     }
+    #homeCarousel {
+        margin: 0 auto;
+        max-width: 1500px;
+        margin-top: 72px;
+    }
+    .review-grid {
+        margin: 0 auto;
+        max-width: 1500px;
+    }
 }
 
 //about.html
@@ -144,6 +153,7 @@ body {
     grid-template-areas: 
         'beth'
         'marianne'
+        'pennyjulie'
         'marcy'
         'elizabeth'
         'heidi'
@@ -151,6 +161,9 @@ body {
         'cindy'
         'sandra'
         'nancy'
+        'gail'
+        'andrea'
+        'joanne'
     ;
 }
 .review {
@@ -186,6 +199,18 @@ body {
 .nancy {
     grid-area: nancy;
 }
+.gail {
+    grid-area: gail;
+}
+.andrea {
+    grid-area: andrea;
+}
+.pennyjulie {
+    grid-area: pennyjulie;
+}
+.joanne {
+    grid-area: joanne;
+}
 
 @include respond-above(sm) {
     .review-grid {
@@ -196,6 +221,9 @@ body {
             'cindy cindy'
             'kate sandra'
             'kate marcy'
+            'pennyjulie pennyjulie'
+            'andrea gail'
+            'joanne gail'
         ;
     }
 }
@@ -206,7 +234,10 @@ body {
             'beth marianne marianne'
             'marcy kate elizabeth'
             'heidi kate sandra'
+            'gail andrea joanne'
+            'gail pennyjulie pennyjulie'
             'cindy cindy nancy'
+            
         ;
     }
 }
