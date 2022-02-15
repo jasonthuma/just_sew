@@ -116,12 +116,12 @@ body .page-footer {
   margin-top: 20px;
 }
 
-.banner, .bannerHeader {
+.reviewBanner, .bannerHeader {
   position: relative;
   height: 200px;
 }
 
-.banner::before {
+.reviewBanner::before {
   content: "";
   background-image: url(/img/reviews_banner.jpg);
   background-repeat: no-repeat;
@@ -138,21 +138,6 @@ body .page-footer {
   position: relative;
   font-size: 3rem;
   font-weight: bold;
-}
-
-.review-grid {
-  display: -ms-grid;
-  display: grid;
-  gap: 1.5rem;
-  padding: 20px;
-  grid-auto-columns: 1fr;
-      grid-template-areas: 'beth' 'marianne' 'pennyjulie' 'marcy' 'elizabeth' 'heidi' 'kate' 'cindy' 'sandra' 'nancy' 'gail' 'andrea' 'joanne';
-}
-
-.review {
-  border: 2px solid #343a40;
-  background-color: #eeeaea;
-  padding: 20px;
 }
 
 .beth {
@@ -233,6 +218,21 @@ body .page-footer {
   grid-area: joanne;
 }
 
+.review-grid {
+  display: -ms-grid;
+  display: grid;
+  gap: 1.5rem;
+  padding: 20px;
+  grid-auto-columns: 1fr;
+      grid-template-areas: 'beth' 'marianne' 'pennyjulie' 'marcy' 'elizabeth' 'heidi' 'kate' 'cindy' 'sandra' 'nancy' 'gail' 'andrea' 'joanne';
+}
+
+.review {
+  border: 2px solid #343a40;
+  background-color: #eeeaea;
+  padding: 20px;
+}
+
 @media (min-width: 768px) {
   .review-grid {
         grid-template-areas: 'heidi marianne' 'nancy marianne' 'elizabeth beth' 'cindy cindy' 'kate sandra' 'kate marcy' 'pennyjulie pennyjulie' 'andrea gail' 'joanne gail';
@@ -252,7 +252,7 @@ body .page-footer {
   .contact {
     text-align: right;
   }
-  .banner, .bannerHeader {
+  .reviewBanner, .bannerHeader {
     height: 300px;
   }
 }

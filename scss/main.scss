@@ -121,12 +121,12 @@ body {
 }
 
 //reviews.html
-.banner, .bannerHeader {
+.reviewBanner, .bannerHeader {
     position: relative;
     height: 200px;
 }
 
-.banner::before {
+.reviewBanner::before {
     content: "";
     background-image: url(/img/reviews_banner.jpg);
     background-repeat: no-repeat;
@@ -143,34 +143,6 @@ body {
     font-size: 3rem;
     font-weight: bold;
     
-}
-.review-grid {
-    display: grid;
-    gap: 1.5rem;
-    padding: 20px;
-    grid-auto-columns: 1fr;
-    
-    grid-template-areas: 
-        'beth'
-        'marianne'
-        'pennyjulie'
-        'marcy'
-        'elizabeth'
-        'heidi'
-        'kate'
-        'cindy'
-        'sandra'
-        'nancy'
-        'gail'
-        'andrea'
-        'joanne'
-    ;
-}
-.review {
-    border: 2px solid $dark-text-color;
-    background-color: $medium-background;
-    padding: 20px;
-    //align-self: center;
 }
 .beth {
     grid-area: beth;
@@ -211,6 +183,34 @@ body {
 .joanne {
     grid-area: joanne;
 }
+.review-grid {
+    display: grid;
+    gap: 1.5rem;
+    padding: 20px;
+    grid-auto-columns: 1fr;
+    
+    grid-template-areas: 
+        'beth'
+        'marianne'
+        'pennyjulie'
+        'marcy'
+        'elizabeth'
+        'heidi'
+        'kate'
+        'cindy'
+        'sandra'
+        'nancy'
+        'gail'
+        'andrea'
+        'joanne'
+    ;
+}
+.review {
+    border: 2px solid $dark-text-color;
+    background-color: $medium-background;
+    padding: 20px;
+    //align-self: center;
+}
 
 @include respond-above(sm) {
     .review-grid {
@@ -249,7 +249,7 @@ body {
     .contact {
         text-align: right;
     }
-    .banner, .bannerHeader {
+    .reviewBanner, .bannerHeader {
         height: 300px;
     }
 }
