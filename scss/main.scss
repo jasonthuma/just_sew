@@ -64,7 +64,7 @@ body {
         }
     }
 }
-.bannerHeader, .slipBannerHeader {
+.bannerHeader {
     height: 200px;
 }
 
@@ -166,33 +166,6 @@ body {
     position: relative;
     font-size: 3rem;
 }
-.review-grid {
-    display: grid;
-    gap: 1.5rem;
-    padding: 20px;
-    grid-auto-columns: 1fr;
-    
-    grid-template-areas: 
-        'beth'
-        'marianne'
-        'pennyjulie'
-        'marcy'
-        'elizabeth'
-        'heidi'
-        'kate'
-        'cindy'
-        'sandra'
-        'nancy'
-        'gail'
-        'andrea'
-        'joanne'
-    ;
-}
-.review {
-    border: 2px solid $dark-text-color;
-    background-color: $medium-background;
-    padding: 20px;
-}
 .beth {
     grid-area: beth;
 }
@@ -232,6 +205,34 @@ body {
 .joanne {
     grid-area: joanne;
 }
+.review-grid {
+    display: grid;
+    gap: 1.5rem;
+    padding: 20px;
+    grid-auto-columns: 1fr;
+    
+    grid-template-areas: 
+        'beth'
+        'marianne'
+        'pennyjulie'
+        'marcy'
+        'elizabeth'
+        'heidi'
+        'kate'
+        'cindy'
+        'sandra'
+        'nancy'
+        'gail'
+        'andrea'
+        'joanne'
+    ;
+}
+.review {
+    border: 2px solid $dark-text-color;
+    background-color: $medium-background;
+    padding: 20px;
+    //align-self: center;
+}
 
 @include respond-above(sm) {
     .review-grid {
@@ -270,11 +271,8 @@ body {
     .contact {
         text-align: right;
     }
-    .reviewBanner, .bannerHeader {
+    .reviewBanner, .slipBanner, .bannerHeader {
         height: 300px;
-    }
-    .slipBanner, .slipBannerHeader {
-        height: 400px;
     }
 }
 
