@@ -67,7 +67,16 @@ body {
 .bannerHeader {
     height: 200px;
 }
+<<<<<<< HEAD
 
+=======
+.important {
+    color: darkred;
+}
+.legend {
+    font-size: 1rem;
+}
+>>>>>>> main
 
 //index.html
 .changeSlip {
@@ -120,7 +129,11 @@ body {
 }
 .slipBanner::before {
     content: "";
+<<<<<<< HEAD
     background-image: url(/just_sew/img/slip_banner.jpg);
+=======
+    background-image: url(/img/slip_banner.jpg);
+>>>>>>> main
     background-repeat: no-repeat;
     background-size: cover;
     opacity: 0.7;
@@ -234,6 +247,36 @@ body {
     //align-self: center;
 }
 
+//contact.html
+.contactBanner {
+    position: relative;
+    height: 200px;
+}
+
+.contactBanner::before {
+    content: "";
+    background-image: url(/img/contact_banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.7;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+}
+.contactHeader {
+    position: relative;
+    font-size: 3rem;
+    font-weight: bold;
+    
+}
+.formDiv {
+    margin: 0 auto;
+    max-width: 400px;
+}
+
+
 @include respond-above(sm) {
     .review-grid {
         grid-template-areas: 
@@ -271,8 +314,16 @@ body {
     .contact {
         text-align: right;
     }
+<<<<<<< HEAD
     .reviewBanner, .slipBanner, .bannerHeader {
+=======
+    .reviewBanner, .slipBanner, .contactBanner, .bannerHeader {
+>>>>>>> main
         height: 300px;
+    }
+    iframe {
+        width: 600px;
+        height: 450px;
     }
 }
 
