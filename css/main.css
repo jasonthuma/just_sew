@@ -48,7 +48,7 @@ body .page-footer {
 
 .contact .contactInfo {
   margin: 0;
-  padding-left: 20px;
+  padding-left: 0px;
 }
 
 .contact .contactInfo #cell {
@@ -109,7 +109,7 @@ body .page-footer {
   }
   #homeCarousel {
     margin: 0 auto;
-    max-width: 1500px;
+    max-width: 1920px;
     margin-top: 72px;
   }
   .review-grid {
@@ -172,7 +172,6 @@ body .page-footer {
 .reviewsHeader {
   position: relative;
   font-size: 3rem;
-  font-weight: bold;
 }
 
 .beth {
@@ -253,13 +252,19 @@ body .page-footer {
   grid-area: joanne;
 }
 
+.carolyn {
+  -ms-grid-row: 14;
+  -ms-grid-column: 1;
+  grid-area: carolyn;
+}
+
 .review-grid {
   display: -ms-grid;
   display: grid;
   gap: 1.5rem;
   padding: 20px;
   grid-auto-columns: 1fr;
-      grid-template-areas: 'beth' 'marianne' 'pennyjulie' 'marcy' 'elizabeth' 'heidi' 'kate' 'cindy' 'sandra' 'nancy' 'gail' 'andrea' 'joanne';
+      grid-template-areas: 'beth' 'marianne' 'pennyjulie' 'marcy' 'elizabeth' 'heidi' 'kate' 'cindy' 'sandra' 'nancy' 'gail' 'andrea' 'joanne' 'carolyn';
 }
 
 .review {
@@ -278,7 +283,7 @@ body .page-footer {
   background-image: url(/img/contact_banner.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  opacity: 0.7;
+  opacity: 0.6;
   position: absolute;
   top: 0px;
   right: 0px;
@@ -299,13 +304,13 @@ body .page-footer {
 
 @media (min-width: 768px) {
   .review-grid {
-        grid-template-areas: 'heidi marianne' 'nancy marianne' 'elizabeth beth' 'cindy cindy' 'kate sandra' 'kate marcy' 'pennyjulie pennyjulie' 'andrea gail' 'joanne gail';
+        grid-template-areas: 'carolyn carolyn' 'heidi marianne' 'nancy marianne' 'elizabeth beth' 'cindy cindy' 'kate sandra' 'kate marcy' 'pennyjulie pennyjulie' 'andrea gail' 'joanne gail';
   }
 }
 
 @media (min-width: 1200px) {
   .review-grid {
-        grid-template-areas: 'beth marianne marianne' 'marcy kate elizabeth' 'heidi kate sandra' 'gail andrea joanne' 'gail pennyjulie pennyjulie' 'cindy cindy nancy';
+        grid-template-areas: 'beth marianne marianne' 'sandra sandra kate' 'carolyn andrea kate' 'carolyn joanne heidi' 'pennyjulie pennyjulie cindy' 'nancy marcy cindy' 'elizabeth gail gail';
   }
 }
 
