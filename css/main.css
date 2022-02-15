@@ -63,10 +63,6 @@ body .page-footer {
   height: 200px;
 }
 
-.bannerHeader {
-  height: 200px;
-}
-
 .important {
   color: darkred;
 }
@@ -129,11 +125,7 @@ body .page-footer {
 
 .slipBanner::before {
   content: "";
-<<<<<<< HEAD
   background-image: url(/just_sew/img/slip_banner.jpg);
-=======
-  background-image: url(/img/slip_banner.jpg);
->>>>>>> main
   background-repeat: no-repeat;
   background-size: cover;
   opacity: 0.7;
@@ -323,11 +315,7 @@ body .page-footer {
   .contact {
     text-align: right;
   }
-<<<<<<< HEAD
-  .reviewBanner, .slipBanner, .bannerHeader {
-=======
   .reviewBanner, .slipBanner, .contactBanner, .bannerHeader {
->>>>>>> main
     height: 300px;
   }
   iframe {
