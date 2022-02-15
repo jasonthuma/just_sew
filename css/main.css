@@ -59,6 +59,18 @@ body .page-footer {
   list-style-image: url("/img/mailSmall.png");
 }
 
+.bannerHeader {
+  height: 200px;
+}
+
+.important {
+  color: darkred;
+}
+
+.legend {
+  font-size: 1rem;
+}
+
 .changeSlip {
   content: url(/img/home_slip_mobile.jpg);
 }
@@ -106,6 +118,29 @@ body .page-footer {
   }
 }
 
+.slipBanner {
+  position: relative;
+  height: 200px;
+}
+
+.slipBanner::before {
+  content: "";
+  background-image: url(/img/slip_banner.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.7;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+}
+
+.slipHeader {
+  position: relative;
+  font-size: 3rem;
+}
+
 #aboutPortrait {
   width: 100%;
   max-width: 400px;
@@ -116,7 +151,7 @@ body .page-footer {
   margin-top: 20px;
 }
 
-.reviewBanner, .bannerHeader {
+.reviewBanner {
   position: relative;
   height: 200px;
 }
@@ -233,6 +268,35 @@ body .page-footer {
   padding: 20px;
 }
 
+.contactBanner {
+  position: relative;
+  height: 200px;
+}
+
+.contactBanner::before {
+  content: "";
+  background-image: url(/img/contact_banner.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.7;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+}
+
+.contactHeader {
+  position: relative;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.formDiv {
+  margin: 0 auto;
+  max-width: 400px;
+}
+
 @media (min-width: 768px) {
   .review-grid {
         grid-template-areas: 'heidi marianne' 'nancy marianne' 'elizabeth beth' 'cindy cindy' 'kate sandra' 'kate marcy' 'pennyjulie pennyjulie' 'andrea gail' 'joanne gail';
@@ -252,8 +316,12 @@ body .page-footer {
   .contact {
     text-align: right;
   }
-  .reviewBanner, .bannerHeader {
+  .reviewBanner, .slipBanner, .contactBanner, .bannerHeader {
     height: 300px;
+  }
+  iframe {
+    width: 600px;
+    height: 450px;
   }
 }
 
