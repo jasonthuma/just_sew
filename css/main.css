@@ -99,6 +99,15 @@ body .page-footer {
   .changeFabric {
     content: url(/just_sew/img/home_fabric.jpg);
   }
+  #homeCarousel {
+    margin: 0 auto;
+    max-width: 1500px;
+    margin-top: 72px;
+  }
+  .review-grid {
+    margin: 0 auto;
+    max-width: 1500px;
+  }
 }
 
 .slipBanner {
@@ -163,7 +172,7 @@ body .page-footer {
   gap: 1.5rem;
   padding: 20px;
   grid-auto-columns: 1fr;
-      grid-template-areas: 'beth' 'marianne' 'marcy' 'elizabeth' 'heidi' 'kate' 'cindy' 'sandra' 'nancy';
+      grid-template-areas: 'beth' 'marianne' 'pennyjulie' 'marcy' 'elizabeth' 'heidi' 'kate' 'cindy' 'sandra' 'nancy' 'gail' 'andrea' 'joanne';
 }
 
 .review {
@@ -185,56 +194,80 @@ body .page-footer {
 }
 
 .marcy {
-  -ms-grid-row: 3;
+  -ms-grid-row: 4;
   -ms-grid-column: 1;
   grid-area: marcy;
 }
 
 .elizabeth {
-  -ms-grid-row: 4;
+  -ms-grid-row: 5;
   -ms-grid-column: 1;
   grid-area: elizabeth;
 }
 
 .heidi {
-  -ms-grid-row: 5;
+  -ms-grid-row: 6;
   -ms-grid-column: 1;
   grid-area: heidi;
 }
 
 .kate {
-  -ms-grid-row: 6;
+  -ms-grid-row: 7;
   -ms-grid-column: 1;
   grid-area: kate;
 }
 
 .cindy {
-  -ms-grid-row: 7;
+  -ms-grid-row: 8;
   -ms-grid-column: 1;
   grid-area: cindy;
 }
 
 .sandra {
-  -ms-grid-row: 8;
+  -ms-grid-row: 9;
   -ms-grid-column: 1;
   grid-area: sandra;
 }
 
 .nancy {
-  -ms-grid-row: 9;
+  -ms-grid-row: 10;
   -ms-grid-column: 1;
   grid-area: nancy;
 }
 
+.gail {
+  -ms-grid-row: 11;
+  -ms-grid-column: 1;
+  grid-area: gail;
+}
+
+.andrea {
+  -ms-grid-row: 12;
+  -ms-grid-column: 1;
+  grid-area: andrea;
+}
+
+.pennyjulie {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: pennyjulie;
+}
+
+.joanne {
+  -ms-grid-row: 13;
+  -ms-grid-column: 1;
+  grid-area: joanne;
+}
+
 @media (min-width: 768px) {
   .review-grid {
-        grid-template-areas: 'heidi marianne' 'nancy marianne' 'elizabeth beth' 'cindy cindy' 'kate sandra' 'kate marcy';
+        grid-template-areas: 'heidi marianne' 'nancy marianne' 'elizabeth beth' 'cindy cindy' 'kate sandra' 'kate marcy' 'pennyjulie pennyjulie' 'andrea gail' 'joanne gail';
   }
 }
 
 @media (min-width: 1200px) {
   .review-grid {
-        grid-template-areas: 'beth marianne marianne' 'marcy kate elizabeth' 'heidi kate sandra' 'cindy cindy nancy';
+        grid-template-areas: 'beth marianne marianne' 'marcy kate elizabeth' 'heidi kate sandra' 'gail andrea joanne' 'gail pennyjulie pennyjulie' 'cindy cindy nancy';
   }
 }
 
