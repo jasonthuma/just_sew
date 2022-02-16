@@ -13,3 +13,6 @@ $('.changeProject').click(()=>{
 $('.changeFabric').click(()=>{
     window.location.href = 'sales.html';
 });
+$('#logo').click(()=>{
+    window.location.href = 'index.html';
+});
