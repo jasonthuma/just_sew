@@ -92,6 +92,15 @@ body .page-footer {
   background-color: #343a40df;
 }
 
+#homeCarousel {
+  margin: 0 auto;
+  margin-top: 72px;
+}
+
+.homeCarouselDiv {
+  padding: 0;
+}
+
 .slipBanner {
   position: relative;
   height: 200px;
@@ -310,21 +319,8 @@ body .page-footer {
   .changeFabric {
     content: url(/just_sew/img/home_fabric.jpg);
   }
-}
-
-@media (min-width: 1200px) {
-  #homeCarousel {
-    margin: 0 auto;
-    max-width: 1400px;
-    margin-top: 72px;
-  }
-}
-
-@media (min-width: 2000px) {
-  #homeCarousel {
-    margin: 0 auto;
-    max-width: 1920px;
-    margin-top: 72px;
+  .homeCarouselDiv {
+    padding: 0 9%;
   }
 }
 
