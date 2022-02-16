@@ -3,11 +3,13 @@ $medium-background:#eeeaea;
 $dark-color: #343a40;
 $accent-color: #21a39e;
 $dark-text-color:#343a40;
+$home-background:#343a40df;
 $light-text-color: #F7F2F2; 
 $primary-font: constantia;
 $breakpoints: (
   xs: 576px,
   sm: 768px,
   md: 992px,
-  lg: 1200px
+  lg: 1200px,
+  xl: 2000px
 );

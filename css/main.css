@@ -48,7 +48,7 @@ body .page-footer {
 
 .contact .contactInfo {
   margin: 0;
-  padding-left: 20px;
+  padding-left: 0px;
 }
 
 .contact .contactInfo #cell {
@@ -61,14 +61,6 @@ body .page-footer {
 
 .bannerHeader {
   height: 200px;
-}
-
-.important {
-  color: darkred;
-}
-
-.legend {
-  font-size: 1rem;
 }
 
 .changeSlip {
@@ -91,31 +83,13 @@ body .page-footer {
   content: url(/just_sew/img/home_fabric_mobile.jpg);
 }
 
-@media (min-width: 992px) {
-  .changeSlip {
-    content: url(/just_sew/img/home_slip.jpg);
-  }
-  .changePillow {
-    content: url(/just_sew/img/home_pillow.jpg);
-  }
-  .changeEmbroidery {
-    content: url(/just_sew/img/home_embroidery.jpg);
-  }
-  .changeProject {
-    content: url(/just_sew/img/home_project.jpg);
-  }
-  .changeFabric {
-    content: url(/just_sew/img/home_fabric.jpg);
-  }
-  #homeCarousel {
-    margin: 0 auto;
-    max-width: 1500px;
-    margin-top: 72px;
-  }
-  .review-grid {
-    margin: 0 auto;
-    max-width: 1500px;
-  }
+.captionTitle {
+  color: #21a39e;
+  text-shadow: -1px 0 #F7F2F2, 0 1px #F7F2F2, 1px 0 #F7F2F2, 0 -1px #F7F2F2, -3px 0 #343a40, 0 3px #343a40, 3px 0 #343a40, 0 -3px #343a40;
+}
+
+.home {
+  background-color: #343a40df;
 }
 
 .slipBanner {
@@ -139,6 +113,8 @@ body .page-footer {
 .slipHeader {
   position: relative;
   font-size: 3rem;
+  color: #21a39e;
+  text-shadow: -1px 0 #F7F2F2, 0 1px #F7F2F2, 1px 0 #F7F2F2, 0 -1px #F7F2F2, -2px 0 #343a40, 0 2px #343a40, 2px 0 #343a40, 0 -2px #343a40;
 }
 
 #aboutPortrait {
@@ -149,6 +125,8 @@ body .page-footer {
 
 .aboutHeader {
   margin-top: 20px;
+  color: #21a39e;
+  text-shadow: -1px 0 #F7F2F2, 0 1px #F7F2F2, 1px 0 #F7F2F2, 0 -1px #F7F2F2, -2px 0 #343a40, 0 2px #343a40, 2px 0 #343a40, 0 -2px #343a40;
 }
 
 .reviewBanner {
@@ -172,6 +150,8 @@ body .page-footer {
 .reviewsHeader {
   position: relative;
   font-size: 3rem;
+  color: #21a39e;
+  text-shadow: -1px 0 #F7F2F2, 0 1px #F7F2F2, 1px 0 #F7F2F2, 0 -1px #F7F2F2, -2px 0 #343a40, 0 2px #343a40, 2px 0 #343a40, 0 -2px #343a40;
 }
 
 .beth {
@@ -252,18 +232,26 @@ body .page-footer {
   grid-area: joanne;
 }
 
+.carolyn {
+  -ms-grid-row: 14;
+  -ms-grid-column: 1;
+  grid-area: carolyn;
+}
+
 .review-grid {
   display: -ms-grid;
   display: grid;
   gap: 1.5rem;
   padding: 20px;
   grid-auto-columns: 1fr;
-      grid-template-areas: 'beth' 'marianne' 'pennyjulie' 'marcy' 'elizabeth' 'heidi' 'kate' 'cindy' 'sandra' 'nancy' 'gail' 'andrea' 'joanne';
+      grid-template-areas: 'beth' 'marianne' 'pennyjulie' 'marcy' 'elizabeth' 'heidi' 'kate' 'cindy' 'sandra' 'nancy' 'gail' 'andrea' 'joanne' 'carolyn';
 }
 
 .review {
   border: 2px solid #343a40;
   background-color: #eeeaea;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   padding: 20px;
 }
 
@@ -277,7 +265,7 @@ body .page-footer {
   background-image: url(/just_sew/img/contact_banner.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  opacity: 0.7;
+  opacity: 0.6;
   position: absolute;
   top: 0px;
   right: 0px;
@@ -288,23 +276,81 @@ body .page-footer {
 .contactHeader {
   position: relative;
   font-size: 3rem;
-  font-weight: bold;
+  color: #21a39e;
+  text-shadow: -1px 0 #F7F2F2, 0 1px #F7F2F2, 1px 0 #F7F2F2, 0 -1px #F7F2F2, -2px 0 #343a40, 0 2px #343a40, 2px 0 #343a40, 0 -2px #343a40;
 }
 
-.formDiv {
-  margin: 0 auto;
-  max-width: 400px;
+.important {
+  color: darkred;
+}
+
+.legend {
+  font-size: 1rem;
+}
+
+@media (min-width: 768px) {
+  .captionTitle {
+    font-size: 4rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .changeSlip {
+    content: url(/just_sew/img/home_slip.jpg);
+  }
+  .changePillow {
+    content: url(/just_sew/img/home_pillow.jpg);
+  }
+  .changeEmbroidery {
+    content: url(/just_sew/img/home_embroidery.jpg);
+  }
+  .changeProject {
+    content: url(/just_sew/img/home_project.jpg);
+  }
+  .changeFabric {
+    content: url(/just_sew/img/home_fabric.jpg);
+  }
+}
+
+@media (min-width: 1200px) {
+  #homeCarousel {
+    margin: 0 auto;
+    max-width: 1400px;
+    margin-top: 72px;
+  }
+}
+
+@media (min-width: 2000px) {
+  #homeCarousel {
+    margin: 0 auto;
+    max-width: 1920px;
+    margin-top: 72px;
+  }
+}
+
+@media (min-width: 992px) {
+  .review-grid {
+    margin: 0 auto;
+    max-width: 1200px;
+  }
 }
 
 @media (min-width: 768px) {
   .review-grid {
-        grid-template-areas: 'heidi marianne' 'nancy marianne' 'elizabeth beth' 'cindy cindy' 'kate sandra' 'kate marcy' 'pennyjulie pennyjulie' 'andrea gail' 'joanne gail';
+        grid-template-areas: 'carolyn carolyn' 'heidi marianne' 'nancy marianne' 'elizabeth beth' 'cindy cindy' 'kate sandra' 'kate marcy' 'pennyjulie pennyjulie' 'andrea gail' 'joanne gail';
   }
 }
 
 @media (min-width: 1200px) {
   .review-grid {
-        grid-template-areas: 'beth marianne marianne' 'marcy kate elizabeth' 'heidi kate sandra' 'gail andrea joanne' 'gail pennyjulie pennyjulie' 'cindy cindy nancy';
+        grid-template-areas: 'beth marianne marianne' 'sandra sandra kate' 'carolyn andrea kate' 'carolyn joanne heidi' 'pennyjulie pennyjulie cindy' 'nancy marcy cindy' 'elizabeth gail gail';
+  }
+}
+
+@media (min-width: 768px) {
+  iframe {
+    width: 600px;
+    height: 450px;
   }
 }
 
@@ -316,11 +362,7 @@ body .page-footer {
     text-align: right;
   }
   .reviewBanner, .slipBanner, .contactBanner, .bannerHeader {
-    height: 300px;
-  }
-  iframe {
-    width: 600px;
-    height: 450px;
+    height: 250px;
   }
 }
 
