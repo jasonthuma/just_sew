@@ -92,6 +92,13 @@ body {
 .home {
     background-color: $home-background;
 }
+#homeCarousel {
+    margin: 0 auto;
+    margin-top: 72px; 
+}
+.homeCarouselDiv {
+    padding: 0;
+}
 
 //services:slipcovers
 .slipBanner {
@@ -279,22 +286,11 @@ body {
     .changeFabric {
         content: url(/img/home_fabric.jpg);
     }
-}
-@include respond-above(lg) {
-    #homeCarousel {
-        margin: 0 auto;
-        max-width: 1400px;
-        margin-top: 72px;
+    .homeCarouselDiv {
+        padding: 0 9%;
     }
 }
-@include respond-above(xl) {
-    #homeCarousel {
-        margin: 0 auto;
-        max-width: 1920px;
-        margin-top: 72px;
-    }
-}
-//@include respond-above()
+
 //services
 //slipcovers
 
