@@ -67,12 +67,7 @@ body {
 .bannerHeader {
     height: 200px;
 }
-.important {
-    color: darkred;
-}
-.legend {
-    font-size: 1rem;
-}
+
 
 //index.html
 .changeSlip {
@@ -90,34 +85,14 @@ body {
 .changeFabric {
     content: url(/img/home_fabric_mobile.jpg);
 }
-  
-
-@include respond-above(md) {
-    .changeSlip {
-        content: url(/img/home_slip.jpg);
-    }
-    .changePillow {
-        content: url(/img/home_pillow.jpg);
-    }
-    .changeEmbroidery {
-        content: url(/img/home_embroidery.jpg);
-    }
-    .changeProject {
-        content: url(/img/home_project.jpg);
-    }
-    .changeFabric {
-        content: url(/img/home_fabric.jpg);
-    }
-    #homeCarousel {
-        margin: 0 auto;
-        max-width: 1920px;
-        margin-top: 72px;
-    }
-    .review-grid {
-        margin: 0 auto;
-        max-width: 1500px;
-    }
+.captionTitle {
+    color: $accent-color;
+    text-shadow: -1px 0 $primary-color, 0 1px $primary-color, 1px 0 $primary-color, 0 -1px $primary-color, -3px 0 $dark-color, 0 3px $dark-color, 3px 0 $dark-color, 0 -3px $dark-color;
 }
+.home {
+    background-color: $home-background;
+}
+
 //services:slipcovers
 .slipBanner {
     position: relative;
@@ -138,6 +113,8 @@ body {
 .slipHeader {
     position: relative;
     font-size: 3rem;
+    color: $accent-color;
+    text-shadow: -1px 0 $primary-color, 0 1px $primary-color, 1px 0 $primary-color, 0 -1px $primary-color, -2px 0 $dark-color, 0 2px $dark-color, 2px 0 $dark-color, 0 -2px $dark-color;
 }
 
 //about.html
@@ -148,6 +125,8 @@ body {
 }
 .aboutHeader {
     margin-top: 20px;
+    color: $accent-color;
+    text-shadow: -1px 0 $primary-color, 0 1px $primary-color, 1px 0 $primary-color, 0 -1px $primary-color, -2px 0 $dark-color, 0 2px $dark-color, 2px 0 $dark-color, 0 -2px $dark-color;
 }
 
 //reviews.html
@@ -171,6 +150,8 @@ body {
 .reviewsHeader {
     position: relative;
     font-size: 3rem;
+    color: $accent-color;
+    text-shadow: -1px 0 $primary-color, 0 1px $primary-color, 1px 0 $primary-color, 0 -1px $primary-color, -2px 0 $dark-color, 0 2px $dark-color, 2px 0 $dark-color, 0 -2px $dark-color;
 }
 .beth {
     grid-area: beth;
@@ -240,8 +221,8 @@ body {
 .review {
     border: 2px solid $dark-text-color;
     background-color: $medium-background;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     padding: 20px;
-    //align-self: center;
 }
 
 //contact.html
@@ -249,7 +230,6 @@ body {
     position: relative;
     height: 200px;
 }
-
 .contactBanner::before {
     content: "";
     background-image: url(/img/contact_banner.jpg);
@@ -265,15 +245,74 @@ body {
 .contactHeader {
     position: relative;
     font-size: 3rem;
-    font-weight: bold;
-    
+    color: $accent-color;
+    text-shadow: -1px 0 $primary-color, 0 1px $primary-color, 1px 0 $primary-color, 0 -1px $primary-color, -2px 0 $dark-color, 0 2px $dark-color, 2px 0 $dark-color, 0 -2px $dark-color;
 }
-.formDiv {
-    margin: 0 auto;
-    max-width: 400px;
+.important {
+    color: darkred;
+}
+.legend {
+    font-size: 1rem;
 }
 
 
+//mixins
+//index.html
+@include respond-above(sm) {
+    .captionTitle {
+        font-size: 4rem;
+    }
+}  
+@include respond-above(md) {
+    .changeSlip {
+        content: url(/img/home_slip.jpg);
+    }
+    .changePillow {
+        content: url(/img/home_pillow.jpg);
+    }
+    .changeEmbroidery {
+        content: url(/img/home_embroidery.jpg);
+    }
+    .changeProject {
+        content: url(/img/home_project.jpg);
+    }
+    .changeFabric {
+        content: url(/img/home_fabric.jpg);
+    }
+}
+@include respond-above(lg) {
+    #homeCarousel {
+        margin: 0 auto;
+        max-width: 1400px;
+        margin-top: 72px;
+    }
+}
+@include respond-above(xl) {
+    #homeCarousel {
+        margin: 0 auto;
+        max-width: 1920px;
+        margin-top: 72px;
+    }
+}
+//@include respond-above()
+//services
+//slipcovers
+
+//pillows
+
+//embroidery
+
+//projects
+
+//fabric sales
+
+//reviews
+@include respond-above(md) {
+    .review-grid {
+        margin: 0 auto;
+        max-width: 1200px;
+    }
+}
 @include respond-above(sm) {
     .review-grid {
         grid-template-areas: 
@@ -306,6 +345,15 @@ body {
     }
 }
 
+//contact
+@include respond-above(sm) {
+    iframe {
+        width: 600px;
+        height: 450px;
+    }
+}
+
+//applies to all
 @include respond-above(sm) {
     .address {
         text-align: left;
@@ -314,14 +362,9 @@ body {
         text-align: right;
     }
     .reviewBanner, .slipBanner, .contactBanner, .bannerHeader {
-        height: 300px;
-    }
-    iframe {
-        width: 600px;
-        height: 450px;
-    }
+        height: 250px;
+    }  
 }
-
 @include respond-above(md) {
 	.navbar .navbar-item .dropdown-menu{ display: none; }
 	.navbar .navbar-item:hover .dropdown-menu{ display: block; }
