@@ -111,6 +111,12 @@ body {
 .homeCarouselDiv {
     padding: 0;
 }
+.spanSlide {
+    font-size: 1.5rem;
+    color: $accent-color;
+    text-shadow: -1px 0 $dark-color, 0 1px $dark-color, 1px 0 $dark-color, 0 -1px $dark-color;
+    cursor: pointer;
+}
 
 //services:slipcovers
 .slipBanner {
@@ -134,6 +140,20 @@ body {
     font-size: 3rem;
     color: $accent-color;
     text-shadow: -1px 0 $primary-color, 0 1px $primary-color, 1px 0 $primary-color, 0 -1px $primary-color, -2px 0 $dark-color, 0 2px $dark-color, 2px 0 $dark-color, 0 -2px $dark-color;
+}
+.card {
+    margin-bottom: 30px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.card-img-top {
+    width: 100%;
+    height: 60vw;
+    object-fit: cover;
+}
+.card-img-bottom {
+    width: 100%;
+    height: 50vw;
+    object-fit: cover;
 }
 
 //about.html
@@ -287,6 +307,11 @@ body {
     .captionTitle {
         font-size: 3rem;
     }
+    .card-img-top {
+        width: 100%;
+        height: 30vw;
+        object-fit: cover;
+    }
 }  
 @include respond-above(md) {
     .changeSlip {
@@ -316,6 +341,35 @@ body {
     }
     .captionTitle {
         font-size: 4rem;
+    }
+    .card-img-top {
+        width: 100%;
+        height: 15vw;
+        object-fit: cover;
+    }
+    .card-img-bottom {
+        width: 100%;
+        height: 25vw;
+        object-fit: cover;
+    }
+}
+@include respond-above(lg) {
+    .card-img-bottom {
+        width: 100%;
+        height: 20vw;
+        object-fit: cover;
+    }
+}
+@include respond-above(xl) {
+    .card-img-top {
+        width: 100%;
+        height: 10vw;
+        object-fit: cover;
+    }
+    .card-img-bottom {
+        width: 100%;
+        height: 15vw;
+        object-fit: cover;
     }
 }
 

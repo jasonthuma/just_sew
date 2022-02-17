@@ -1,3 +1,4 @@
+//Clickable Regions
 $('.changeSlip').click(()=>{
     window.location.href = 'slipcvr.html';
 });
@@ -16,3 +17,32 @@ $('.changeFabric').click(()=>{
 $('#logo').click(()=>{
     window.location.href = 'index.html';
 });
+<<<<<<< HEAD
+=======
+//Animations to slide to location on page
+$(".armSlide").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#arm").offset().top - $('.navbar').outerHeight() + "px"
+    }, 1000);
+});
+$('.chaiseSlide').click(function(){
+    $('html, body').animate({
+        scrollTop: $("#chaise").offset().top - $('.navbar').outerHeight() + "px"
+    }, 1000);
+});
+$('.loveSlide').click(function(){
+    $('html, body').animate({
+        scrollTop: $("#love").offset().top - $('.navbar').outerHeight() + "px"
+    }, 1000);
+});
+$('.otherSlide').click(function(){
+    $('html, body').animate({
+        scrollTop: $("#other").offset().top - $('.navbar').outerHeight() + "px"
+    }, 1000);
+});
+//modal pop-up for images
+$('#slip1').click(()=>{
+    $('.modal-body').empty();
+    $('.modal-body').append(`<img src='${$('#slip1').attr('src')}' style='width:100%;'>`);
+});
+>>>>>>> main
