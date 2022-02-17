@@ -41,5 +41,5 @@ $('.otherSlide').click(function(){
 //modal pop-up for images
 $('#slip1').click(()=>{
     $('.modal-body').empty();
-    $('.modal-body').append(`<img src='${$('#slip1').attr('src')}' style='width:99%;'>`);
+    $('.modal-body').append(`<img src='${$('#slip1').attr('src')}' style='width:100%;'>`);
 });
