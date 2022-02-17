@@ -17,8 +17,6 @@ $('.changeFabric').click(()=>{
 $('#logo').click(()=>{
     window.location.href = 'index.html';
 });
-<<<<<<< HEAD
-=======
 //Animations to slide to location on page
 $(".armSlide").click(function() {
     $('html, body').animate({
@@ -45,4 +43,3 @@ $('#slip1').click(()=>{
     $('.modal-body').empty();
     $('.modal-body').append(`<img src='${$('#slip1').attr('src')}' style='width:100%;'>`);
 });
->>>>>>> main
