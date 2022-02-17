@@ -8,6 +8,7 @@ body #logo {
   padding: 0;
   margin: 0;
   width: 190px;
+  cursor: pointer;
 }
 
 body .dropdown-menu {
@@ -65,27 +66,38 @@ body .page-footer {
 
 .changeSlip {
   content: url(/img/home_slip_mobile.jpg);
+  cursor: pointer;
 }
 
 .changePillow {
   content: url(/img/home_pillow_mobile.jpg);
+  cursor: pointer;
 }
 
 .changeEmbroidery {
   content: url(/img/home_embroidery_mobile.jpg);
+  cursor: pointer;
 }
 
 .changeProject {
   content: url(/img/home_project_mobile.jpg);
+  cursor: pointer;
 }
 
 .changeFabric {
   content: url(/img/home_fabric_mobile.jpg);
+  cursor: pointer;
 }
 
 .captionTitle {
+  font-size: 1.75rem;
   color: #21a39e;
   text-shadow: -1px 0 #F7F2F2, 0 1px #F7F2F2, 1px 0 #F7F2F2, 0 -1px #F7F2F2, -3px 0 #343a40, 0 3px #343a40, 3px 0 #343a40, 0 -3px #343a40;
+}
+
+.carousel-caption {
+  background: rgba(0, 0, 0, 0.45);
+  padding: 5px 0;
 }
 
 .home {
@@ -298,8 +310,15 @@ body .page-footer {
 }
 
 @media (min-width: 768px) {
+  .carousel-caption {
+    background: rgba(0, 0, 0, 0.45);
+    max-width: 60%;
+    width: 60%;
+    left: 20%;
+    padding: 5px 0;
+  }
   .captionTitle {
-    font-size: 4rem;
+    font-size: 3rem;
   }
 }
 
@@ -321,6 +340,16 @@ body .page-footer {
   }
   .homeCarouselDiv {
     padding: 0 9%;
+  }
+  .carousel-caption {
+    background: rgba(0, 0, 0, 0.45);
+    max-width: 40%;
+    width: 40%;
+    left: 30%;
+    padding: 5px 0;
+  }
+  .captionTitle {
+    font-size: 4rem;
   }
 }
 
