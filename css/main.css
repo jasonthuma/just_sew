@@ -165,6 +165,12 @@ body .page-footer {
      object-fit: cover;
 }
 
+.modalX {
+  position: absolute;
+  right: 20px;
+  color: #FFF;
+}
+
 #aboutPortrait {
   width: 100%;
   max-width: 400px;
