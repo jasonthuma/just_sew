@@ -39,7 +39,87 @@ $('.otherSlide').click(function(){
     }, 1000);
 });
 //modal pop-up for images
-$('#slip1').click(()=>{
-    $('.modal-body').empty();
-    $('.modal-body').append(`<img src='${$('#slip1').attr('src')}' style='width:100%;'>`);
+$('.slip_chair_1').click(()=>{
+    displayModal('.slip_chair_1');
 });
+$('.slip_chair_2').click(()=>{
+    displayModal('.slip_chair_2');
+});
+$('.slip_chair_3').click(()=>{
+    displayModal('.slip_chair_3');
+});
+$('.slip_chair_4').click(()=>{
+    displayModal('.slip_chair_4');
+});
+$('.slip_chair_5').click(()=>{
+    displayModal('.slip_chair_5');
+});
+$('.slip_chair_6').click(()=>{
+    displayModal('.slip_chair_6');
+});
+$('.slip_chair_7').click(()=>{
+    displayModal('.slip_chair_7');
+});
+$('.slip_chair_8').click(()=>{
+    displayModal('.slip_chair_8');
+});
+$('.slip_chair_9').click(()=>{
+    displayModal('.slip_chair_9');
+});
+$('.slip_chair_10').click(()=>{
+    displayModal('.slip_chair_10');
+});
+$('.slip_chair_11').click(()=>{
+    displayModal('.slip_chair_11');
+});
+$('.slip_chair_12').click(()=>{
+    displayModal('.slip_chair_12');
+});
+$('.slip_chaise_1').click(()=>{
+    displayModal('.slip_chaise_1');
+});
+$('.slip_chaise_2').click(()=>{
+    displayModal('.slip_chaise_2');
+});
+$('.slip_chaise_3').click(()=>{
+    displayModal('.slip_chaise_3');
+});
+$('.slip_love_1').click(()=>{
+    displayModal('.slip_love_1');
+});
+$('.slip_love_2').click(()=>{
+    displayModal('.slip_love_2');
+});
+$('.slip_love_3').click(()=>{
+    displayModal('.slip_love_3');
+});
+$('.slip_love_4').click(()=>{
+    displayModal('.slip_love_4');
+});
+$('.slip_spec_1').click(()=>{
+    displayModal('.slip_spec_1');
+});
+$('.slip_spec_2').click(()=>{
+    displayModal('.slip_spec_2');
+});
+$('.slip_spec_3').click(()=>{
+    displayModal('.slip_spec_3');
+});
+$('.slip_spec_4').click(()=>{
+    displayModal('.slip_spec_4');
+});
+$('.slip_spec_5').click(()=>{
+    displayModal('.slip_spec_5');
+});
+$('.slip_spec_6').click(()=>{
+    displayModal('.slip_spec_6');
+});
+$('.slip_spec_7').click(()=>{
+    displayModal('.slip_spec_7');
+});
+
+function displayModal(element) {
+    $('.modal-body').empty();
+    $('.modal-body').append(`<img src='${$(element).attr('src')}' style='width:100%;'>`);
+    $('.modal-body').append('<button type="button" class="close modalX" data-dismiss="modal" aria-label="Close"><span>&times;</span></button>');
+}
