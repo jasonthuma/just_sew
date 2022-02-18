@@ -117,6 +117,9 @@ $('.slip_spec_6').click(()=>{
 $('.slip_spec_7').click(()=>{
     displayModal('.slip_spec_7');
 });
+$('.slip_spec_8').click(()=>{
+    displayModal('.slip_spec_8');
+});
 
 function displayModal(element) {
     $('.modal-body').empty();

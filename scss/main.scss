@@ -65,7 +65,7 @@ body {
         }
     }
 }
-.bannerHeader {
+.bannerHeader, .reviewBannerHeader {
     height: 200px;
 }
 
@@ -137,6 +137,8 @@ body {
     left: 0px;
 }
 .slipHeader {
+    background: rgba(0, 0, 0, 0.45);
+    padding: 0 5px;
     position: relative;
     font-size: 3rem;
     color: $accent-color;
@@ -163,6 +165,58 @@ body {
     color: #FFF;
 }
 
+//cushions & pillows
+.pillowBanner {
+    position: relative;
+    height: 200px;
+}
+.pillowBanner::before {
+    content: "";
+    background-image: url(/img/pillow_banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.7;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+}
+.pillowHeader {
+    background: rgba(0, 0, 0, 0.45);
+    padding: 0 5px;
+    position: relative;
+    font-size: 3rem;
+    color: $accent-color;
+    text-shadow: -1px 0 $primary-color, 0 1px $primary-color, 1px 0 $primary-color, 0 -1px $primary-color, -2px 0 $dark-color, 0 2px $dark-color, 2px 0 $dark-color, 0 -2px $dark-color;
+}
+
+//projects
+.projectBanner {
+    position: relative;
+    height: 200px;
+}
+.projectBanner::before {
+    content: "";
+    background-image: url(/img/project_banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.7;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+}
+.projectHeader {
+    background: rgba(0, 0, 0, 0.45);
+    padding: 0 5px;
+    position: relative;
+    font-size: 3rem;
+    color: $accent-color;
+    text-shadow: -1px 0 $primary-color, 0 1px $primary-color, 1px 0 $primary-color, 0 -1px $primary-color, -2px 0 $dark-color, 0 2px $dark-color, 2px 0 $dark-color, 0 -2px $dark-color;
+}
+
 //sales
 .salesBanner {
     position: relative;
@@ -173,7 +227,7 @@ body {
     background-image: url(/img/sales_banner.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    opacity: 0.6;
+    opacity: 0.7;
     position: absolute;
     top: 0px;
     right: 0px;
@@ -181,6 +235,8 @@ body {
     left: 0px;
 }
 .salesHeader {
+    background: rgba(0, 0, 0, 0.45);
+    padding: 0 5px;
     position: relative;
     font-size: 3rem;
     color: $accent-color;
@@ -197,6 +253,8 @@ body {
     border-radius: 50%;
 }
 .aboutHeader {
+    background: rgba(0, 0, 0, 0.45);
+    padding: 0 10px;
     margin-top: 20px;
     color: $accent-color;
     text-shadow: -1px 0 $primary-color, 0 1px $primary-color, 1px 0 $primary-color, 0 -1px $primary-color, -2px 0 $dark-color, 0 2px $dark-color, 2px 0 $dark-color, 0 -2px $dark-color;
@@ -221,6 +279,8 @@ body {
     left: 0px;
 }
 .reviewsHeader {
+    background: rgba(0, 0, 0, 0.45);
+    padding: 0 5px;
     position: relative;
     font-size: 3rem;
     color: $accent-color;
@@ -308,7 +368,7 @@ body {
     background-image: url(/img/contact_banner.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    opacity: 0.6;
+    opacity: 0.7;
     position: absolute;
     top: 0px;
     right: 0px;
@@ -316,6 +376,8 @@ body {
     left: 0px;
 }
 .contactHeader {
+    background: rgba(0, 0, 0, 0.45);
+    padding: 0 5px;
     position: relative;
     font-size: 3rem;
     color: $accent-color;
@@ -476,8 +538,11 @@ body {
     .contact {
         text-align: right;
     }
-    .reviewBanner, .slipBanner, .contactBanner, .bannerHeader, .salesBanner {
+    .slipBanner, .contactBanner, .bannerHeader, .salesBanner, .pillowBanner, .projectBanner {
         height: 250px;
+    }
+    .reviewBanner, .reviewBannerHeader {
+        height: 400px;
     }  
 }
 @include respond-above(md) {

@@ -60,7 +60,7 @@ body .page-footer {
   list-style-image: url("/img/mailSmall.png");
 }
 
-.bannerHeader {
+.bannerHeader, .reviewBannerHeader {
   height: 200px;
 }
 
@@ -139,6 +139,8 @@ body .page-footer {
 }
 
 .slipHeader {
+  background: rgba(0, 0, 0, 0.45);
+  padding: 0 5px;
   position: relative;
   font-size: 3rem;
   color: #21a39e;
@@ -172,6 +174,60 @@ body .page-footer {
   color: #FFF;
 }
 
+.pillowBanner {
+  position: relative;
+  height: 200px;
+}
+
+.pillowBanner::before {
+  content: "";
+  background-image: url(/img/pillow_banner.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.7;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+}
+
+.pillowHeader {
+  background: rgba(0, 0, 0, 0.45);
+  padding: 0 5px;
+  position: relative;
+  font-size: 3rem;
+  color: #21a39e;
+  text-shadow: -1px 0 #F7F2F2, 0 1px #F7F2F2, 1px 0 #F7F2F2, 0 -1px #F7F2F2, -2px 0 #343a40, 0 2px #343a40, 2px 0 #343a40, 0 -2px #343a40;
+}
+
+.projectBanner {
+  position: relative;
+  height: 200px;
+}
+
+.projectBanner::before {
+  content: "";
+  background-image: url(/img/project_banner.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.7;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+}
+
+.projectHeader {
+  background: rgba(0, 0, 0, 0.45);
+  padding: 0 5px;
+  position: relative;
+  font-size: 3rem;
+  color: #21a39e;
+  text-shadow: -1px 0 #F7F2F2, 0 1px #F7F2F2, 1px 0 #F7F2F2, 0 -1px #F7F2F2, -2px 0 #343a40, 0 2px #343a40, 2px 0 #343a40, 0 -2px #343a40;
+}
+
 .salesBanner {
   position: relative;
   height: 200px;
@@ -182,7 +238,7 @@ body .page-footer {
   background-image: url(/img/sales_banner.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  opacity: 0.6;
+  opacity: 0.7;
   position: absolute;
   top: 0px;
   right: 0px;
@@ -191,6 +247,8 @@ body .page-footer {
 }
 
 .salesHeader {
+  background: rgba(0, 0, 0, 0.45);
+  padding: 0 5px;
   position: relative;
   font-size: 3rem;
   color: #21a39e;
@@ -208,6 +266,8 @@ body .page-footer {
 }
 
 .aboutHeader {
+  background: rgba(0, 0, 0, 0.45);
+  padding: 0 10px;
   margin-top: 20px;
   color: #21a39e;
   text-shadow: -1px 0 #F7F2F2, 0 1px #F7F2F2, 1px 0 #F7F2F2, 0 -1px #F7F2F2, -2px 0 #343a40, 0 2px #343a40, 2px 0 #343a40, 0 -2px #343a40;
@@ -232,6 +292,8 @@ body .page-footer {
 }
 
 .reviewsHeader {
+  background: rgba(0, 0, 0, 0.45);
+  padding: 0 5px;
   position: relative;
   font-size: 3rem;
   color: #21a39e;
@@ -349,7 +411,7 @@ body .page-footer {
   background-image: url(/img/contact_banner.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  opacity: 0.6;
+  opacity: 0.7;
   position: absolute;
   top: 0px;
   right: 0px;
@@ -358,6 +420,8 @@ body .page-footer {
 }
 
 .contactHeader {
+  background: rgba(0, 0, 0, 0.45);
+  padding: 0 5px;
   position: relative;
   font-size: 3rem;
   color: #21a39e;
@@ -491,8 +555,11 @@ body .page-footer {
   .contact {
     text-align: right;
   }
-  .reviewBanner, .slipBanner, .contactBanner, .bannerHeader, .salesBanner {
+  .slipBanner, .contactBanner, .bannerHeader, .salesBanner, .pillowBanner, .projectBanner {
     height: 250px;
+  }
+  .reviewBanner, .reviewBannerHeader {
+    height: 400px;
   }
 }
 
