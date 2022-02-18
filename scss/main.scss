@@ -118,7 +118,8 @@ body {
     cursor: pointer;
 }
 
-//services:slipcovers
+//services
+//slipcovers
 .slipBanner {
     position: relative;
     height: 200px;
@@ -142,6 +143,7 @@ body {
     text-shadow: -1px 0 $primary-color, 0 1px $primary-color, 1px 0 $primary-color, 0 -1px $primary-color, -2px 0 $dark-color, 0 2px $dark-color, 2px 0 $dark-color, 0 -2px $dark-color;
 }
 .card {
+    cursor: pointer;
     margin-bottom: 30px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -159,6 +161,33 @@ body {
     position: absolute;
     right: 20px;
     color: #FFF;
+}
+
+//sales
+.salesBanner {
+    position: relative;
+    height: 200px;
+}
+.salesBanner::before {
+    content: "";
+    background-image: url(/img/sales_banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.6;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+}
+.salesHeader {
+    position: relative;
+    font-size: 3rem;
+    color: $accent-color;
+    text-shadow: -1px 0 $primary-color, 0 1px $primary-color, 1px 0 $primary-color, 0 -1px $primary-color, -2px 0 $dark-color, 0 2px $dark-color, 2px 0 $dark-color, 0 -2px $dark-color;
+}
+.salesP {
+    font-size: 1.25rem;
 }
 
 //about.html
@@ -447,7 +476,7 @@ body {
     .contact {
         text-align: right;
     }
-    .reviewBanner, .slipBanner, .contactBanner, .bannerHeader {
+    .reviewBanner, .slipBanner, .contactBanner, .bannerHeader, .salesBanner {
         height: 250px;
     }  
 }
