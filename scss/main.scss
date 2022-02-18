@@ -334,9 +334,7 @@ body {
     .changeFabric {
         content: url(/just_sew/img/home_fabric.jpg);
     }
-    .homeCarouselDiv {
-        padding: 0 9%;
-    }
+    
     .carousel-caption {
         background: rgba(0, 0, 0, 0.45);
         max-width: 40%;
@@ -344,9 +342,7 @@ body {
         left: 30%;
         padding: 5px 0;
     }
-    .captionTitle {
-        font-size: 4rem;
-    }
+    
     .card-img-top {
         width: 100%;
         height: 15vw;
@@ -363,6 +359,12 @@ body {
         width: 100%;
         height: 20vw;
         object-fit: cover;
+    }
+    .captionTitle {
+        font-size: 4rem;
+    }
+    .homeCarouselDiv {
+        padding: 0 9%;
     }
 }
 @include respond-above(xl) {
