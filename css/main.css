@@ -64,6 +64,10 @@ body .page-footer {
   height: 200px;
 }
 
+.largerP {
+  font-size: 1.25rem;
+}
+
 .changeSlip {
   content: url(/img/home_slip_mobile.jpg);
   cursor: pointer;
@@ -253,10 +257,6 @@ body .page-footer {
   font-size: 3rem;
   color: #21a39e;
   text-shadow: -1px 0 #F7F2F2, 0 1px #F7F2F2, 1px 0 #F7F2F2, 0 -1px #F7F2F2, -2px 0 #343a40, 0 2px #343a40, 2px 0 #343a40, 0 -2px #343a40;
-}
-
-.salesP {
-  font-size: 1.25rem;
 }
 
 #aboutPortrait {

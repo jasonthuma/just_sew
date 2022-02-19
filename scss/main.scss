@@ -68,7 +68,9 @@ body {
 .bannerHeader, .reviewBannerHeader {
     height: 200px;
 }
-
+.largerP {
+    font-size: 1.25rem;
+}
 
 //index.html
 .changeSlip {
@@ -242,9 +244,7 @@ body {
     color: $accent-color;
     text-shadow: -1px 0 $primary-color, 0 1px $primary-color, 1px 0 $primary-color, 0 -1px $primary-color, -2px 0 $dark-color, 0 2px $dark-color, 2px 0 $dark-color, 0 -2px $dark-color;
 }
-.salesP {
-    font-size: 1.25rem;
-}
+
 
 //about.html
 #aboutPortrait {
