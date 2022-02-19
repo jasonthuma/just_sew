@@ -38,6 +38,16 @@ $('.otherSlide').click(function(){
         scrollTop: $("#other").offset().top - $('.navbar').outerHeight() + "px"
     }, 1000);
 });
+$('.pillowSlide').click(function(){
+    $('html, body').animate({
+        scrollTop: $("#pillow").offset().top - $('.navbar').outerHeight() + "px"
+    }, 1000);
+});
+$('.cushionSlide').click(function(){
+    $('html, body').animate({
+        scrollTop: $("#cushion").offset().top - $('.navbar').outerHeight() + "px"
+    }, 1000);
+});
 //modal pop-up for images
 $('.slip_chair_1').click(()=>{
     displayModal('.slip_chair_1');
@@ -120,6 +130,55 @@ $('.slip_spec_7').click(()=>{
 $('.slip_spec_8').click(()=>{
     displayModal('.slip_spec_8');
 });
+$('.pillow_1').click(()=>{
+    displayModal('.pillow_1');
+});
+$('.pillow_2').click(()=>{
+    displayModal('.pillow_2');
+});
+$('.pillow_3').click(()=>{
+    displayModal('.pillow_3');
+});
+$('.pillow_4').click(()=>{
+    displayModal('.pillow_4');
+});
+$('.pillow_5').click(()=>{
+    displayModal('.pillow_5');
+});
+$('.pillow_6').click(()=>{
+    displayModal('.pillow_6');
+});
+$('.pillow_7').click(()=>{
+    displayModal('.pillow_7');
+});
+$('.pillow_8').click(()=>{
+    displayModal('.pillow_8');
+});
+$('.pillow_9').click(()=>{
+    displayModal('.pillow_9');
+});
+$('.cushion_1').click(()=>{
+    displayModal('.cushion_1');
+});
+$('.cushion_2').click(()=>{
+    displayModal('.cushion_2');
+});
+$('.cushion_3').click(()=>{
+    displayModal('.cushion_3');
+});
+$('.cushion_4').click(()=>{
+    displayModal('.cushion_4');
+});
+$('.cushion_5').click(()=>{
+    displayModal('.cushion_5');
+});
+$('.cushion_6').click(()=>{
+    displayModal('.cushion_6');
+});
+$('.cushion_7').click(()=>{
+    displayModal('.cushion_7');
+});
+
 
 function displayModal(element) {
     $('.modal-body').empty();
