@@ -243,6 +243,39 @@ $('.project_17').click(()=>{
     displayModal('.project_17');
     $('.modal-footer').append("<p>Christmas ornaments.</p>");
 });
+$('.embrdry_1').click(()=>{
+    displayModal('.embrdry_1');
+});
+$('.embrdry_2').click(()=>{
+    displayModal('.embrdry_2');
+});
+$('.embrdry_3').click(()=>{
+    displayModal('.embrdry_3');
+});
+$('.embrdry_4').click(()=>{
+    displayModal('.embrdry_4');
+});
+$('.embrdry_5').click(()=>{
+    displayModal('.embrdry_5');
+});
+$('.embrdry_6').click(()=>{
+    displayModal('.embrdry_6');
+});
+$('.embrdry_7').click(()=>{
+    displayModal('.embrdry_7');
+});
+$('.embrdry_8').click(()=>{
+    displayModal('.embrdry_8');
+});
+$('.embrdry_9').click(()=>{
+    displayModal('.embrdry_9');
+});
+$('.embrdry_10').click(()=>{
+    displayModal('.embrdry_10');
+});
+$('.embrdry_11').click(()=>{
+    displayModal('.embrdry_11');
+});
 
 
 function displayModal(element) {
