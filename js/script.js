@@ -183,53 +183,65 @@ $('.project_1').click(()=>{
 });
 $('.project_2').click(()=>{
     displayModal('.project_2');
-    $('.modal-footer').append("<p>Clutch purse made from mom's wedding gown.");
+    $('.modal-footer').append("<p>Clutch purse made from mom's wedding gown.</p>");
 });
 $('.project_3').click(()=>{
     displayModal('.project_3');
-    $('.modal-footer').append("<p>Clutch purse made from mom's wedding gown.");
+    $('.modal-footer').append("<p>Clutch purse made from mom's wedding gown.</p>");
 });
 $('.project_4').click(()=>{
     displayModal('.project_4');
 });
 $('.project_5').click(()=>{
     displayModal('.project_5');
+    $('.modal-footer').append("<p>Wrapped rope coasters.</p>");
 });
 $('.project_6').click(()=>{
     displayModal('.project_6');
+    $('.modal-footer').append("<p>Use leftover pillow fabric to make placemats!</p>");
 });
 $('.project_7').click(()=>{
     displayModal('.project_7');
+    $('.modal-footer').append("<p>Memory quilt for a brother lost too soon.</p>");
 });
 $('.project_8').click(()=>{
     displayModal('.project_8');
+    $('.modal-footer').append("<p>A granddaughter's first 18 years.</p>");
 });
 $('.project_9').click(()=>{
     displayModal('.project_9');
+    $('.modal-footer').append("<p>Cute wall hanging.</p>");
 });
 $('.project_10').click(()=>{
     displayModal('.project_10');
 });
 $('.project_11').click(()=>{
     displayModal('.project_11');
+    $('.modal-footer').append("<p>Silk shirt converted into pillow.</p>");
 });
 $('.project_12').click(()=>{
     displayModal('.project_12');
+    $('.modal-footer').append("<p>Grandfather's shirt converted into pillow with favorite saying embroided on it.</p>");
 });
 $('.project_13').click(()=>{
     displayModal('.project_13');
+    $('.modal-footer').append("<p>Otto</p>");
 });
 $('.project_14').click(()=>{
     displayModal('.project_14');
+    $('.modal-footer').append("<p>Winston</p>");
 });
 $('.project_15').click(()=>{
     displayModal('.project_15');
+    $('.modal-footer').append("<p>Max</p>");
 });
 $('.project_16').click(()=>{
     displayModal('.project_16');
+    $('.modal-footer').append("<p>Dog/Cat collars.</p>");
 });
 $('.project_17').click(()=>{
     displayModal('.project_17');
+    $('.modal-footer').append("<p>Christmas ornaments.</p>");
 });
 
 
