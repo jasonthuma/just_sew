@@ -178,6 +178,9 @@ $('.cushion_6').click(()=>{
 $('.cushion_7').click(()=>{
     displayModal('.cushion_7');
 });
+$('.cushion_8').click(()=>{
+    displayModal('.cushion_8');
+});
 $('.project_1').click(()=>{
     displayModal('.project_1');
 });
