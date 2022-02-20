@@ -178,10 +178,64 @@ $('.cushion_6').click(()=>{
 $('.cushion_7').click(()=>{
     displayModal('.cushion_7');
 });
+$('.project_1').click(()=>{
+    displayModal('.project_1');
+});
+$('.project_2').click(()=>{
+    displayModal('.project_2');
+    $('.modal-footer').append("<p>Clutch purse made from mom's wedding gown.");
+});
+$('.project_3').click(()=>{
+    displayModal('.project_3');
+    $('.modal-footer').append("<p>Clutch purse made from mom's wedding gown.");
+});
+$('.project_4').click(()=>{
+    displayModal('.project_4');
+});
+$('.project_5').click(()=>{
+    displayModal('.project_5');
+});
+$('.project_6').click(()=>{
+    displayModal('.project_6');
+});
+$('.project_7').click(()=>{
+    displayModal('.project_7');
+});
+$('.project_8').click(()=>{
+    displayModal('.project_8');
+});
+$('.project_9').click(()=>{
+    displayModal('.project_9');
+});
+$('.project_10').click(()=>{
+    displayModal('.project_10');
+});
+$('.project_11').click(()=>{
+    displayModal('.project_11');
+});
+$('.project_12').click(()=>{
+    displayModal('.project_12');
+});
+$('.project_13').click(()=>{
+    displayModal('.project_13');
+});
+$('.project_14').click(()=>{
+    displayModal('.project_14');
+});
+$('.project_15').click(()=>{
+    displayModal('.project_15');
+});
+$('.project_16').click(()=>{
+    displayModal('.project_16');
+});
+$('.project_17').click(()=>{
+    displayModal('.project_17');
+});
 
 
 function displayModal(element) {
     $('.modal-body').empty();
+    $('.modal-footer').empty();
     $('.modal-body').append(`<img src='${$(element).attr('src')}' style='width:100%;'>`);
     $('.modal-body').append('<button type="button" class="close modalX" data-dismiss="modal" aria-label="Close"><span>&times;</span></button>');
 }
