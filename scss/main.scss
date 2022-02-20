@@ -58,10 +58,10 @@ body {
         padding-left: 0px;
         
         #cell {
-            list-style-image: url("/img/phoneSmall.png");
+            list-style-image: url("/just_sew/img/phoneSmall.png");
         }
         #mail {
-            list-style-image: url("/img/mailSmall.png");
+            list-style-image: url("/just_sew/img/mailSmall.png");
         }
     }
 }
@@ -74,23 +74,23 @@ body {
 
 //index.html
 .changeSlip {
-    content: url(/img/home_slip_mobile.jpg);
+    content: url(/just_sew/img/home_slip_mobile.jpg);
     cursor: pointer;
 }
 .changePillow {
-    content: url(/img/home_pillow_mobile.jpg);
+    content: url(/just_sew/img/home_pillow_mobile.jpg);
     cursor: pointer;
 }
 .changeEmbroidery {
-    content: url(/img/home_embroidery_mobile.jpg);
+    content: url(/just_sew/img/home_embroidery_mobile.jpg);
     cursor: pointer;
 }
 .changeProject {
-    content: url(/img/home_project_mobile.jpg);
+    content: url(/just_sew/img/home_project_mobile.jpg);
     cursor: pointer;
 }
 .changeFabric {
-    content: url(/img/home_fabric_mobile.jpg);
+    content: url(/just_sew/img/home_fabric_mobile.jpg);
     cursor: pointer;
 }
 .captionTitle {
@@ -128,7 +128,7 @@ body {
 }
 .slipBanner::before {
     content: "";
-    background-image: url(/img/slip_banner.jpg);
+    background-image: url(/just_sew/img/slip_banner.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     opacity: 0.7;
@@ -174,7 +174,7 @@ body {
 }
 .pillowBanner::before {
     content: "";
-    background-image: url(/img/pillow_banner.jpg);
+    background-image: url(/just_sew/img/pillow_banner.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     opacity: 0.7;
@@ -200,7 +200,7 @@ body {
 }
 .embrdryBanner::before {
     content: "";
-    background-image: url(/img/embrdry_banner.jpg);
+    background-image: url(/just_sew/img/embrdry_banner.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     opacity: 0.7;
@@ -226,7 +226,7 @@ body {
 }
 .projectBanner::before {
     content: "";
-    background-image: url(/img/project_banner.jpg);
+    background-image: url(/just_sew/img/project_banner.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     opacity: 0.7;
@@ -252,7 +252,7 @@ body {
 }
 .salesBanner::before {
     content: "";
-    background-image: url(/img/sales_banner.jpg);
+    background-image: url(/just_sew/img/sales_banner.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     opacity: 0.7;
@@ -294,7 +294,7 @@ body {
 
 .reviewBanner::before {
     content: "";
-    background-image: url(/img/reviews_banner.jpg);
+    background-image: url(/just_sew/img/reviews_banner.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     opacity: 0.7;
@@ -391,7 +391,7 @@ body {
 }
 .contactBanner::before {
     content: "";
-    background-image: url(/img/contact_banner.jpg);
+    background-image: url(/just_sew/img/contact_banner.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     opacity: 0.7;
@@ -438,19 +438,19 @@ body {
 }  
 @include respond-above(md) {
     .changeSlip {
-        content: url(/img/home_slip.jpg);
+        content: url(/just_sew/img/home_slip.jpg);
     }
     .changePillow {
-        content: url(/img/home_pillow.jpg);
+        content: url(/just_sew/img/home_pillow.jpg);
     }
     .changeEmbroidery {
-        content: url(/img/home_embroidery.jpg);
+        content: url(/just_sew/img/home_embroidery.jpg);
     }
     .changeProject {
-        content: url(/img/home_project.jpg);
+        content: url(/just_sew/img/home_project.jpg);
     }
     .changeFabric {
-        content: url(/img/home_fabric.jpg);
+        content: url(/just_sew/img/home_fabric.jpg);
     }
     
     .carousel-caption {
