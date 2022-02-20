@@ -193,6 +193,32 @@ body {
     text-shadow: -1px 0 $primary-color, 0 1px $primary-color, 1px 0 $primary-color, 0 -1px $primary-color, -2px 0 $dark-color, 0 2px $dark-color, 2px 0 $dark-color, 0 -2px $dark-color;
 }
 
+//embroidery
+.embrdryBanner {
+    position: relative;
+    height: 200px;
+}
+.embrdryBanner::before {
+    content: "";
+    background-image: url(/img/embrdry_banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.7;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+}
+.embrdryHeader {
+    background: rgba(0, 0, 0, 0.45);
+    padding: 0 5px;
+    position: relative;
+    font-size: 3rem;
+    color: $accent-color;
+    text-shadow: -1px 0 $primary-color, 0 1px $primary-color, 1px 0 $primary-color, 0 -1px $primary-color, -2px 0 $dark-color, 0 2px $dark-color, 2px 0 $dark-color, 0 -2px $dark-color;
+}
+
 //projects
 .projectBanner {
     position: relative;
@@ -537,7 +563,7 @@ body {
     .contact {
         text-align: right;
     }
-    .slipBanner, .contactBanner, .bannerHeader, .salesBanner, .pillowBanner, .projectBanner {
+    .slipBanner, .contactBanner, .bannerHeader, .salesBanner, .pillowBanner, .projectBanner, .embrdryBanner {
         height: 250px;
     }
     .reviewBanner, .reviewBannerHeader {
