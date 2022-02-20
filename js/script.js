@@ -276,6 +276,9 @@ $('.embrdry_10').click(()=>{
 $('.embrdry_11').click(()=>{
     displayModal('.embrdry_11');
 });
+$('.embrdry_12').click(()=>{
+    displayModal('.embrdry_12');
+});
 
 
 function displayModal(element) {
