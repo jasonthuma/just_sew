@@ -1,216 +1,387 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-MR353WW");
+    </script>
+    <!-- End Google Tag Manager -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Just Sew - Cushions & Pillows</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/main.css">
-</head>
-<body class="d-flex flex-column min-vh-100">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+      integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body class="d-flex flex-column min-vh-100">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-MR353WW"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
     <nav class="navbar navbar-dark bg-dark navbar-expand-md fixed-top">
-        <h1><img src="/img/just_sew_logo_nav.png" alt="Just Sew" id="logo"></h1>
-        <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav ml-auto">
-                <li class="navbar-item">
-                    <a href="index.html" class="nav-link">Home</a>
-                </li>
-                <li class="navbar-item dropdown">
-                    <a href="services.html" class="nav-link active" data-toggle="dropdown">Services</a>
-                        <ul class="dropdown-menu">
-                            <li><a href="slipcvr.html" class="dropdown-item">Custom Slipcovers</a></li>
-                            <li><a href="pillows.html" class="dropdown-item">Cushions & Pillows</a></li>
-                            <li><a href="embrdry.html" class="dropdown-item">Custom Embroidery</a></li>
-                            <li><a href="projects.html" class="dropdown-item">Special Projects</a></li>
-                            <li><a href="sales.html" class="dropdown-item">Fabric Sales</a></li>
-                        </ul>
-                </li>
-                <li class="navbar-item">
-                    <a href="about.html" class="nav-link">About</a>
-                </li>
-                <li class="navbar-item">
-                    <a href="reviews.html" class="nav-link">Reviews</a>
-                </li>
-                <li class="navbar-item">
-                    <a href="contact.html" class="nav-link">Contact</a>
-                </li>
+      <h1><img src="/img/just_sew_logo_nav.png" alt="Just Sew" id="logo" /></h1>
+      <button
+        class="navbar-toggler"
+        data-toggle="collapse"
+        data-target="#navbarCollapse"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav ml-auto">
+          <li class="navbar-item">
+            <a href="index.html" class="nav-link">Home</a>
+          </li>
+          <li class="navbar-item dropdown">
+            <a
+              href="services.html"
+              class="nav-link active"
+              data-toggle="dropdown"
+              >Services</a
+            >
+            <ul class="dropdown-menu">
+              <li>
+                <a href="slipcvr.html" class="dropdown-item"
+                  >Custom Slipcovers</a
+                >
+              </li>
+              <li>
+                <a href="pillows.html" class="dropdown-item"
+                  >Cushions & Pillows</a
+                >
+              </li>
+              <li>
+                <a href="embrdry.html" class="dropdown-item"
+                  >Custom Embroidery</a
+                >
+              </li>
+              <li>
+                <a href="projects.html" class="dropdown-item"
+                  >Special Projects</a
+                >
+              </li>
+              <li>
+                <a href="sales.html" class="dropdown-item">Fabric Sales</a>
+              </li>
             </ul>
-        </div>
+          </li>
+          <li class="navbar-item">
+            <a href="about.html" class="nav-link">About</a>
+          </li>
+          <li class="navbar-item">
+            <a href="reviews.html" class="nav-link">Reviews</a>
+          </li>
+          <li class="navbar-item">
+            <a href="contact.html" class="nav-link">Contact</a>
+          </li>
+        </ul>
+      </div>
     </nav>
 
     <div class="container-fluid underNav pillowBanner">
-        <div class="row bannerHeader align-items-center justify-content-center">
-            <h1 class="pillowHeader font-weight-bold text-center">Cushions & Pillows</h1>
-        </div>
+      <div class="row bannerHeader align-items-center justify-content-center">
+        <h1 class="pillowHeader font-weight-bold text-center">
+          Cushions & Pillows
+        </h1>
+      </div>
     </div>
 
     <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-sm-10 mt-5 mb-3">
-                <p class="largerP">Pillows add warmth, a pop of color, and they can allow for a quick and 
-                    easy change to your décor.  Knife edge, with cording or a flange, embellished, the 
-                    possibilities are almost endless.  If you have a window seat or other loose cushions 
-                    that need updating, I can make new foam cushions as well as cushion covers. 
-
-                </p>
-            </div>
+      <div class="row justify-content-center">
+        <div class="col-sm-10 mt-5 mb-3">
+          <p class="largerP">
+            Pillows add warmth, a pop of color, and they can allow for a quick
+            and easy change to your décor. Knife edge, with cording or a flange,
+            embellished, the possibilities are almost endless. If you have a
+            window seat or other loose cushions that need updating, I can make
+            new foam cushions as well as cushion covers.
+          </p>
         </div>
+      </div>
     </div>
 
     <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-sm text-center mb-3">
-                <span class="pillowSlide spanSlide">Pillows</span>
-            </div>
-            <div class="col-sm text-center mb-3">
-                <span class="cushionSlide spanSlide">Cushions</span>
-            </div>
-        </div>  
+      <div class="row justify-content-center">
+        <div class="col-sm text-center mb-3">
+          <span class="pillowSlide spanSlide">Pillows</span>
+        </div>
+        <div class="col-sm text-center mb-3">
+          <span class="cushionSlide spanSlide">Cushions</span>
+        </div>
+      </div>
     </div>
 
     <div class="container">
-        <div class="text-center mx-5 my-3" id="pillow">
-            <h3 class="font-weight-bold">Pillows</h3>
+      <div class="text-center mx-5 my-3" id="pillow">
+        <h3 class="font-weight-bold">Pillows</h3>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-sm-6 col-lg-4">
+          <div class="card">
+            <img
+              class="card-img-top pillow_1"
+              src="/img/pillowImg/pillow_1.jpg"
+              alt="Group of Pillows"
+              data-toggle="modal"
+              data-target="#imgModal"
+            />
+          </div>
         </div>
-        <div class="row justify-content-center">
-            <div class="col-sm-6 col-lg-4">
-                <div class="card">
-                    <img class="card-img-top pillow_1" src="/img/pillowImg/pillow_1.jpg" alt="Group of Pillows" data-toggle="modal" data-target="#imgModal">
-                </div>
-            </div>
-            <div class="col-sm-6 col-lg-4">
-                <div class="card">
-                    <img class="card-img-top pillow_2" src="/img/pillowImg/pillow_2.jpg" alt="Blue and White Pillow" data-toggle="modal" data-target="#imgModal">
-                </div>
-            </div>
-            <div class="col-sm-6 col-lg-4">
-                <div class="card">
-                    <img class="card-img-top pillow_3" src="/img/pillowImg/pillow_3.jpg" alt="Group of Pillows" data-toggle="modal" data-target="#imgModal">
-                </div>
-            </div>
-            <div class="col-sm-6 col-lg-4">
-                <div class="card">
-                    <img class="card-img-top pillow_4" src="/img/pillowImg/pillow_4.jpg" alt="Group of Pillows" data-toggle="modal" data-target="#imgModal">
-                </div>
-            </div>
-            <div class="col-sm-6 col-lg-4">
-                <div class="card">
-                    <img class="card-img-top pillow_5" src="/img/pillowImg/pillow_5.jpg" alt="Round Pillow End" data-toggle="modal" data-target="#imgModal">
-                </div>
-            </div>
-            <div class="col-sm-6 col-lg-4">
-                <div class="card">
-                    <img class="card-img-top pillow_6" src="/img/pillowImg/pillow_6.jpg" alt="Group of Pillows" data-toggle="modal" data-target="#imgModal">
-                </div>
-            </div>
-            <div class="col-sm-6 col-lg-4">
-                <div class="card">
-                    <img class="card-img-top pillow_7" src="/img/pillowImg/pillow_7.jpg" alt="Group of Pillows" data-toggle="modal" data-target="#imgModal">
-                </div>
-            </div>
-            <div class="col-sm-6 col-lg-4">
-                <div class="card">
-                    <img class="card-img-top pillow_8" src="/img/pillowImg/pillow_8.jpg" alt="Group of Pillows" data-toggle="modal" data-target="#imgModal">
-                </div>
-            </div>
-            <div class="col-sm-6 col-lg-4">
-                <div class="card">
-                    <img class="card-img-top pillow_9" src="/img/pillowImg/pillow_9.jpg" alt="Group of Pillows" data-toggle="modal" data-target="#imgModal">
-                </div>
-            </div>
+        <div class="col-sm-6 col-lg-4">
+          <div class="card">
+            <img
+              class="card-img-top pillow_2"
+              src="/img/pillowImg/pillow_2.jpg"
+              alt="Blue and White Pillow"
+              data-toggle="modal"
+              data-target="#imgModal"
+            />
+          </div>
         </div>
-        <div class="text-center mx-5 my-3" id="cushion">
-            <h3 class="font-weight-bold">Cushions</h3>
+        <div class="col-sm-6 col-lg-4">
+          <div class="card">
+            <img
+              class="card-img-top pillow_3"
+              src="/img/pillowImg/pillow_3.jpg"
+              alt="Group of Pillows"
+              data-toggle="modal"
+              data-target="#imgModal"
+            />
+          </div>
         </div>
-        <div class="row">
-            <div class="col-lg-6">
-                <div class="card">
-                    <img class="card-img-bottom cushion_1" src="/img/pillowImg/cushion_1.jpg" alt="Porch Bench Cushions" data-toggle="modal" data-target="#imgModal">
-                </div>
-            </div>
-            <div class="col-lg-6">
-                <div class="card">
-                    <img class="card-img-bottom cushion_2" src="/img/pillowImg/cushion_2.jpg" alt="Bay Window Bench Cushion" data-toggle="modal" data-target="#imgModal">
-                </div>
-            </div>
+        <div class="col-sm-6 col-lg-4">
+          <div class="card">
+            <img
+              class="card-img-top pillow_4"
+              src="/img/pillowImg/pillow_4.jpg"
+              alt="Group of Pillows"
+              data-toggle="modal"
+              data-target="#imgModal"
+            />
+          </div>
         </div>
-        <div class="row">
-            <div class="col-lg-6">
-                <div class="card">
-                    <img class="card-img-bottom cushion_3" src="/img/pillowImg/cushion_3.jpg" alt="Curved Bench Cushions" data-toggle="modal" data-target="#imgModal">
-                </div>
-            </div>
-            <div class="col-lg-6">
-                <div class="card">
-                    <img class="card-img-bottom cushion_4" src="/img/pillowImg/cushion_4.jpg" alt="L-Shaped Bench Cushion" data-toggle="modal" data-target="#imgModal">
-                </div>
-            </div>
+        <div class="col-sm-6 col-lg-4">
+          <div class="card">
+            <img
+              class="card-img-top pillow_5"
+              src="/img/pillowImg/pillow_5.jpg"
+              alt="Round Pillow End"
+              data-toggle="modal"
+              data-target="#imgModal"
+            />
+          </div>
         </div>
-        <div class="row">
-            <div class="col-lg-6">
-                <div class="card">
-                    <img class="card-img-bottom cushion_5" src="/img/pillowImg/cushion_5.jpg" alt="Chair Cushions" data-toggle="modal" data-target="#imgModal">
-                </div>
-            </div>
-            <div class="col-lg-6">
-                <div class="card">
-                    <img class="card-img-bottom cushion_6" src="/img/pillowImg/cushion_6.jpg" alt="Chair Cushions" data-toggle="modal" data-target="#imgModal">
-                </div>
-            </div>
+        <div class="col-sm-6 col-lg-4">
+          <div class="card">
+            <img
+              class="card-img-top pillow_6"
+              src="/img/pillowImg/pillow_6.jpg"
+              alt="Group of Pillows"
+              data-toggle="modal"
+              data-target="#imgModal"
+            />
+          </div>
         </div>
-        <div class="row justify-content-center">
-            <div class="col-lg-6">
-                <div class="card">
-                    <img class="card-img-bottom cushion_7" src="/img/pillowImg/cushion_7.jpg" alt="Barstool Cushions" data-toggle="modal" data-target="#imgModal">
-                </div>
-            </div>
-            <div class="col-lg-6">
-                <div class="card">
-                    <img class="card-img-bottom cushion_8" src="/img/pillowImg/cushion_8.jpg" alt="Barstool Cushions" data-toggle="modal" data-target="#imgModal">
-                </div>
-            </div>
+        <div class="col-sm-6 col-lg-4">
+          <div class="card">
+            <img
+              class="card-img-top pillow_7"
+              src="/img/pillowImg/pillow_7.jpg"
+              alt="Group of Pillows"
+              data-toggle="modal"
+              data-target="#imgModal"
+            />
+          </div>
         </div>
+        <div class="col-sm-6 col-lg-4">
+          <div class="card">
+            <img
+              class="card-img-top pillow_8"
+              src="/img/pillowImg/pillow_8.jpg"
+              alt="Group of Pillows"
+              data-toggle="modal"
+              data-target="#imgModal"
+            />
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4">
+          <div class="card">
+            <img
+              class="card-img-top pillow_9"
+              src="/img/pillowImg/pillow_9.jpg"
+              alt="Group of Pillows"
+              data-toggle="modal"
+              data-target="#imgModal"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="text-center mx-5 my-3" id="cushion">
+        <h3 class="font-weight-bold">Cushions</h3>
+      </div>
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="card">
+            <img
+              class="card-img-bottom cushion_1"
+              src="/img/pillowImg/cushion_1.jpg"
+              alt="Porch Bench Cushions"
+              data-toggle="modal"
+              data-target="#imgModal"
+            />
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="card">
+            <img
+              class="card-img-bottom cushion_2"
+              src="/img/pillowImg/cushion_2.jpg"
+              alt="Bay Window Bench Cushion"
+              data-toggle="modal"
+              data-target="#imgModal"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="card">
+            <img
+              class="card-img-bottom cushion_3"
+              src="/img/pillowImg/cushion_3.jpg"
+              alt="Curved Bench Cushions"
+              data-toggle="modal"
+              data-target="#imgModal"
+            />
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="card">
+            <img
+              class="card-img-bottom cushion_4"
+              src="/img/pillowImg/cushion_4.jpg"
+              alt="L-Shaped Bench Cushion"
+              data-toggle="modal"
+              data-target="#imgModal"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="card">
+            <img
+              class="card-img-bottom cushion_5"
+              src="/img/pillowImg/cushion_5.jpg"
+              alt="Chair Cushions"
+              data-toggle="modal"
+              data-target="#imgModal"
+            />
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="card">
+            <img
+              class="card-img-bottom cushion_6"
+              src="/img/pillowImg/cushion_6.jpg"
+              alt="Chair Cushions"
+              data-toggle="modal"
+              data-target="#imgModal"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-lg-6">
+          <div class="card">
+            <img
+              class="card-img-bottom cushion_7"
+              src="/img/pillowImg/cushion_7.jpg"
+              alt="Barstool Cushions"
+              data-toggle="modal"
+              data-target="#imgModal"
+            />
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="card">
+            <img
+              class="card-img-bottom cushion_8"
+              src="/img/pillowImg/cushion_8.jpg"
+              alt="Barstool Cushions"
+              data-toggle="modal"
+              data-target="#imgModal"
+            />
+          </div>
+        </div>
+      </div>
     </div>
 
     <div class="modal fade" tabindex="-1" role="dialog" id="imgModal">
-        <div class="modal-dialog modal-dialog-centered modal-lg" style="width: 96%;" role="document">
-            <div class="modal-content">
-                <div class="modal-body p-2">
-              
-                </div>
-            </div>
+      <div
+        class="modal-dialog modal-dialog-centered modal-lg"
+        style="width: 96%"
+        role="document"
+      >
+        <div class="modal-content">
+          <div class="modal-body p-2"></div>
         </div>
+      </div>
     </div>
-    
-    <footer class="page-footer mt-auto">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-6 my-1 address">
-                    <h5 class="font-weight-bold companyName">Just Sew</h5>
-                    <address class="m-0">
-                        184 Woodland Park <br>
-                        Middlebury, VT 05753
-                    </address>
-                </div>
 
-                <div class="col-sm-6 my-1 contact">
-                    <h5 class="font-weight-bold" id="name">Pat Santner</h5>
-                    <ul class="contactInfo">
-                        <li id="cell">(802) 989 - 0554</li>
-                        <li id="mail">patriciasantner@yahoo.com</li>
-                    </ul>
-                </div>
-            </div>
+    <footer class="page-footer mt-auto">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6 my-1 address">
+            <h5 class="font-weight-bold companyName">Just Sew</h5>
+            <address class="m-0">
+              184 Woodland Park <br />
+              Middlebury, VT 05753
+            </address>
+          </div>
+
+          <div class="col-sm-6 my-1 contact">
+            <h5 class="font-weight-bold" id="name">Pat Santner</h5>
+            <ul class="contactInfo">
+              <li id="cell">(802) 989 - 0554</li>
+              <li id="mail">patriciasantner@yahoo.com</li>
+            </ul>
+          </div>
         </div>
+      </div>
     </footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"
+      integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2"
+      crossorigin="anonymous"
+    ></script>
     <script src="js/script.js"></script>
-</body>
+  </body>
 </html>
